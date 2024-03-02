@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/webp" href="../favicomatic/" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="../favicomatic.zip" sizes="16x16" />
+    
+</head>
+
+<body>
+
+    <div class="obrazky"id="obrazky">
+                
+        <div id="pozadi"class="pozadi">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+
+<div id="topnav"class="topnav"  > 
+    <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>About us</a>
+    <a href="kontakt.php">Contact</a>
+    <a href='restaurace.html'>Restaurant</a>
+    <a class="longtopshort active" href='ubytovani.html'>Accommodations</a>
+    <a href='svatby.html'>Weddings</a>
+    <a class="longtopa"href='pobytoveBalicka.html'>Advantageous stay packages</a>
+    <a href='cenik.html'>Price list</a>
+    <a href='galerie.html'>Gallery</a>
+    <a href='rezervace.php'>Reservation</a>
+    <btn onclick="location.href='https://ulidmanu.cz/ubytovani.html';" id="jazykCZ" class="jazykCZ">CZ</btn>
+    <btn onclick="location.href='ubytovani.html';" id="jazykEN" class="jazykENaktivni">EN</btn>
+    <btn onclick="location.href='https://pl.ulidmanu.cz/ubytovani.html';" id="jazykPL" class="jazykPL">PL</btn>
+<btn onclick="location.href='https://de.ulidmanu.cz/ubytovani.html';" id="jazykDE" class="jazykDE">DE</btn>
+    <div class="canceltopnav" onclick="menoClose()">
+        <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+    </div>
+    
+</div>
+
+<div id="main" class="main">
+    <a id="down_restaurace" onclick="down()"title="Go down">
+        <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+   </a>
+   <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+    <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+</a>
+    <div class="uvod1">
+        <img class="uvod1"id="ubytovani1" src=""alt="Uvod">
+    </div>
+    <div class="oteviraciDoba"id="oteviraciDoba">
+        Pension opening hours: daily according to bookings<br>
+        Restaurant opening hours for STAYING GUESTS:<br>
+        <br><br>
+
+        Mon - Thu 8:00-9:30 and 18:00-20:00<br>
+
+        Fri 8:00-9:30 and 11:30 - 21:00<br>
+        Sat 8:00-9:30 and 11:30 - 21:00<br>
+        Sun 8:00-9:30 and 11:30 - 20:00<br>
+    <br>
+    <p class="info">Outside opening hours, our guests can also use our restaurant as a SELF-SERVICE BAR
+        from Monday to Thursday - we will explain the details on the spot</p>
+
+
+</div>
+
+</div>
+    
+<div class="lokal"id="lokal">
+    <div class="obrazekPokoj">
+        <img id="obrazekPokoj" src="https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp" alt="Lokal">
+    </div>
+    <div class="radekPokoj">
+        Our pension offers accommodation in five rooms with private bathroom, with a total
+        capacity of 13 beds and 3 fixed extra beds. The rooms are furnished with antique country
+        furniture (however, the beds have been adapted to today&#39;s requirements for a healthy sleep),
+        with high quality bed linen, towels and free wireless internet access. In the common areas of
+        the pension you will also find a refrigerator, microwave oven and kettle.
+    </div>
+</div>
+
+<div class="zahradka">
+   <div class="obrazekZahradka">
+<img  src="https://galerie.ulidmanu.cz/galerie/exterier/004_HZ6_3765_Penzion_U_Lidmanu.webp" alt="Zahradka">
+   </div>
+   
+   
+    <div class="radekZahradka"> 
+        For relaxation you can use the common room with TV, board games, library and
+        children&#39;s corner. You can also play table tennis in the large hall. In summer you can
+        enjoy the evenings on the terrace of our restaurant.
+    </div>
+</div>
+
+<div class="salonek">
+   <div class="ObrazekSalonek">
+      <img src="https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp" alt="Salonek">
+   </div>
+  
+    
+    <div class="radekPobyt">
+        <h2>Additional information about your stay</h2>
+        <ul>
+            <li>The whole pension is non-smoking.</li>
+                <li>Parking is free of charge at the pension.</li>
+                    <li>BY PRIOR ARRANGEMENT you can also bring your dog for walks in the
+                        nature.</li>
+<li>We will store your bicycles, skis or strollers at the pension.</li>
+<li>On request we will be happy to clean the rooms during your stay.</li>
+</ul>
+    </div>
+</div>
+
+<div class="sal">
+    <div class="obrazekSal" >
+<img src="https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp" alt="Sal">
+    </div>
+  
+     
+     <div class="radekStravovani">
+        <h2>Catering</h2>
+        The price of accommodation includes a buffet BREAKFAST, which we serve daily from
+        8:00 to 9:00.
+        
+        You can order DINNERS for your stay, which we serve from Monday to Thursday in the
+        form of a two-course menu. From Friday to Sunday you can choose à la carte.
+     </div>
+ </div>
+        <div class="end">e</div>
+</div>
+
+    <script src='jquery.js'></script>
+    <script src="main.js"></script>
+       <script src="action.js"></script>
+       <script src='popup.js'></script>
+       <script src="index.js"></script>
+       <script src="aktivity.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-32x32.webp" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-16x16.webp" sizes="16x16" />
+    <link href="https://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div class="obrazky"id="obrazky">
+                
+        <div id="pozadi"class="pozadi pozmobil">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+
+    <div id="topnav"class="topnav"> 
+       
+        <a onmouseleave="hideNodes(this)" id="index_navbar" class="active"href='index.html'>O nas</a>
+        <a href="kontakt.php">Kontakt</a>
+        <a href='restaurace.html'>Restauracja</a>
+        <a class="longtopshort" href='ubytovani.html'>Zakwaterowanie</a>
+        <a href='svatby.html'>Śluby</a>
+        <a class="longtop" href='pobytoveBalicka.html'>Korzystne pakiety pobytowe</a>
+        <a href='cenik.html'>Cennik</a>
+        <a href='galerie.html'>Galerie</a>
+        <a href='rezervace.php'>Rezerwacja</a>
+
+        <btn onclick="location.href='https://ulidmanu.cz/index.html';" id="jazykCZ"class="jazykCZ">CZ</btn>
+    <btn onclick="location.href='https://en.ulidmanu.cz/index.html';" id="jazykEN"class="jazykEN">EN</btn>
+    <btn onclick="location.href='index.html';" id="jazykPL"class="jazykPLaktivni">PL</btn>
+        <btn onclick="location.href='https://de.ulidmanu.cz/index.html';" id="jazykDE"class="jazykDE">DE</btn>
+        <div class="canceltopnav" onclick="menoClose()">
+            <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+        </div>
+    </div>
+
+    
+    
+
+    <div id="main" class="main">
+ <div class="upozorneni">
+            <p>Od 6 do 26 stycznia restauracja jest zamknięta z powodu remontu.</p>
+        </div>
+        <div class="uvod1">
+            <img class="uvod1"id="uvod1" src=""alt="Uvod">
+        </div>
+        <a id="down_restaurace" onclick="down()"title="Go down">
+            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+        
+        <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+        <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+
+    <div id="uvod"class="uvod">
+                <div class="prvniObrazekTab"> 
+                    <div class="prvniRadek">Zakwaterowanie w Górach Stołowych, region Broumovsko , Machovská Lhota . Słoneczne miejsce w
+                        atrakcyjnym, nieodkrytym turystycznie rejonie pomiędzy Broumovskimi Ścianami a Polskimi Górami
+                        Stołowymi w okolicach Adrszpachu . Spokojna wiejska atmosfera. Stylowe otoczenie w starym
+                        pensjonacie z 1884 roku.
+                        </div>
+                    <div class="prvniObrazek"> <img id="uvod" src="https://galerie.ulidmanu.cz/galerie/exterier/031_DJI_0437_Penzion_U_Lidmanu.webp" alt="Krajina">
+                </div>
+        
+        
+        <div class="druhyObrazekTab">
+            <div class="druhyObrazek"><img src="https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp" alt="Hospoda"></div>
+                <div class="druhyRadek">Nasz pensjonat znajduje się w obszarze chronionego krajobrazu Broumov w romantycznej wsi
+                    Machovská Lhota , którą z jednej strony otacza Park Narodowy Gór Stołowych ze słynną Velką
+                    Hejšovina , a z drugiej strony przez Broumov Mury, popularny Adršpach oddalony jest od nas o 22
+                    km. Region Machov to raj dla miłośników turystyki pieszej, rowerowej, narciarstwa biegowego i
+                    boulderingu. Odnajdą się tu miłośnicy zacisznej wiejskiej atmosfery i rodzinnego środowiska.</div>
+                </div>
+            
+    </div>
+
+    <div class="pribeh">
+        <div class="text">
+            <h2>Opowieść o pensjonacie</h2>
+            Rodzina Šrámów – 1884 – 1950
+            Pierwotnym właścicielem był pan Eduard Šrám . Do pierwotnego domu typu broumovskiego
+            dobudował gospodę, a także pokój gościnny na pierwszym piętrze. Mieszkał w pensjonacie wraz z
+            żoną i ośmiorgiem dzieci. Stworzył też i rozbudował świetlicę społeczną na potrzeby Teatru
+            Ochotniczego Lhota . Był dodatkowo karczmarzem, który po wypowiedzeniu wojny w 1914 r.
+            rzekomo uderzył ze złości kuflem w karczmie obraz cesarza i stłukł go, co widać na nim do dziś.
+            Rodzina Lidmanów - 1950-2014
+            W 1950 r. pensjonat kupiła rodzina Lidmanów , jednak w 1953 r. władze komunistyczne go
+            znacjonalizowały . Przynajmniej mogli tam mieszkać i pracować. Pub Lidman był odwiedzany przez
+            grupy włóczęgów do końca lat 80., bo tu , „na końcu świata”, w pobliżu hermetycznie zamkniętej
+            granicy, pozostawał poza zasięgiem reżimu. W latach 90. rodzina Lidmanów odzyskała pensjonat i
+            prowadził ją do 2014 roku.
+            Rodzina Šturmów od 2014 roku
+            Od 2014 roku jest własnością rodziny Šturmów .
+        </div>
+        
+    </div>
+
+    <div class="tretiObrazekTab">
+        <div class="tretiObrazek"><img src="https://galerie.ulidmanu.cz/galerie/exterier/022_HZ6_3836_Penzion_U_Lidmanu.webp" alt="Hospoda"></div>
+            <div class="tretiRadek"><h2>Jabłoń „U Lidmanů ”</h2>
+                Blenheim renet , zwycięzca czeskiego konkursu „Drzewo Roku 2020”, 7. miejsce w europejskim
+konkursie „Europejskie Drzewo Roku 2021”.</div>
+            </div>
+
+
+    <div class="end_index">e</div>
+</div>
+
+  
+
+<script src='jquery.js'></script>
+<script src="main.js"></script>
+   <script src="action.js"></script>
+   <script src='popup.js'></script>
+   <script src="index.js"></script>
+   <script src="aktivity.js"></script>
+</body>
+
+</html>

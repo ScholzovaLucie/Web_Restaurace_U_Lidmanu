@@ -1,0 +1,7 @@
+{
+    "require": {
+        "nette/mail": "^2.4",
+        "nette/forms": "^2.4",
+        "phpmailer/phpmailer": "^6.6"
+    }
+}

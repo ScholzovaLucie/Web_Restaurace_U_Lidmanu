@@ -1,0 +1,61 @@
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.loadinglogo{
+    position: absolute;
+    z-index: 3050;
+    width: 15vw;
+    left: 40vw;
+    top: 2vh;
+
+}
+
+
+p {
+    line-height: 1.33em;
+    color: #000000;
+}
+h1 {
+    color: #000000;
+}
+
+
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }  
+
+
+@media screen and (max-width: 600px) and (max-device-width:600px) {
+
+    .loadinglogo{
+        position: absolute;
+        z-index: 3050;
+        width: 30vw;
+        left: 35vw;
+        top: 2vh;
+    
+    }
+    #loader {
+        display: block;
+        position: relative;
+        left: 55vw;
+        top: 55vh;
+        width: 30vw;
+        height: 30vw;
+        margin: -75px 0 0 -75px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #000000;
+    
+        -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    
+        z-index: 1001;
+    }
+}

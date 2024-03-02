@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="kontakt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/webp" href="../favicomatic/" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="../favicomatic.zip" sizes="16x16" />
+
+</head>
+
+<body>
+   
+        <div class="obrazky"id="obrazky">
+                
+            <div id="pozadi"class="pozadi pozmobil">
+                <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+        
+                <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+            </div>
+        </div>
+
+<div id="topnav"class="topnav"  > 
+    <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>About us</a>
+    <a   href="kontakt.php">Contact</a>
+    <a class="active"href='restaurace.html'>Restaurant</a>
+    <a class="longtopshort"href='ubytovani.html'>Accommodations</a>
+    <a href='svatby.html'>Weddings</a>
+    <a class="longtopa"href='pobytoveBalicka.html'>Advantageous stay packages</a>
+    <a href='cenik.html'>Price list</a>
+    <a href='galerie.html'>Gallery</a>
+    <a href='rezervace.php'>Reservation</a>
+    <btn onclick="location.href='https://ulidmanu.cz/restaurace.html';" id="jazykCZ" class="jazykCZ">CZ</btn>
+    <btn onclick="location.href='restaurace.html';" id="jazykEN" class="jazykENaktivni">EN</btn>
+    <btn onclick="location.href='https://pl.ulidmanu.cz/restaurace.html';" id="jazykPL" class="jazykPL">PL</btn>
+<btn onclick="location.href='https://de.ulidmanu.cz/restaurace.html';" id="jazykDE" class="jazykDE">DE</btn>
+    <div class="canceltopnav" onclick="menoClose()">
+        <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+    </div>
+    
+</div>
+
+    <div id="main" class="main">
+
+        <div class="uvod1">
+            <img class="uvod1"id="restaurace1" src=""alt="Uvod">
+        </div>
+        
+        <a id="down_restaurace" onclick="down()"title="Go down">
+            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+        
+        <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+        <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+    
+    
+        <div class="lokal"id="lokal">
+            <div class="obrazekLokal">
+                <img id="obrazekLokal" src="https://galerie.ulidmanu.cz/galerie/interier/100_HZ6_3979_Penzion_U_Lidmanu.webp" alt="Lokal">
+            </div>
+            <div class="radekLokal">
+                In the restaurant with a fireplace and a capacity of 40 people, we serve classic dishes of Czech cuisine
+and homemade desserts in the form of DAILY OFFER. Our bar offers Moravian wines, regional beers,
+soft, alcoholic and hot drinks.
+            </div>
+        </div>
+    
+        <div class="zahradka">
+           <div class="obrazekZahradka">
+     <img  src="https://galerie.ulidmanu.cz/galerie/exterier/012_HZ6_3793_Penzion_U_Lidmanu.webp" alt="Zahradka">
+           </div>
+           
+           
+            <div class="radekZahradka"> 
+                In pleasant weather you can sit in our summer teracce. Here you can find our old apple tree. It was
+                chosen as the Czech Tree of the Year in 2020. Here you can enjoy the peace of the countryside and
+                the beautiful view of the surrounding hills. Children can play in the sandbox or have fun on the swing.
+            </div>
+        </div>
+    
+        <div class="salonek">
+           <div class="ObrazekSalonek">
+              <img src="https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp" alt="Salonek">
+           </div>
+          
+            
+            <div class="radekSalonek">
+                The lounge of the restaurant, with a capacity of 20 people, is used for organizing small celebrations,
+                as a training room, as a social room for overnight guests or in case of a larger number of guests to
+                expand the restaurant.
+            </div>
+        </div>
+    
+        <div class="sal">
+           <div class="obrazekSal" >
+       <img src="https://galerie.ulidmanu.cz/galerie/sal/110_HZ6_3997_Penzion_U_Lidmanu.webp" alt="Sal">
+           </div>
+         
+            
+            <div class="radekSal">
+                A large social hall with a capacity of 70 people is intended for organizing larger social events -
+                weddings, celebrations, trainings, lectures, exhibitions, etc.
+            </div>
+        </div>
+    <div id="end"></div>
+        <div class="oteviraciDoba"id="oteviraciDoba">
+            Restaurant opening hours for the public:<br>
+                <br><br>
+                <table class="tableoteviraciDoba">
+<tr>
+<th>
+    July - August
+</th>
+   <th>
+    January - June, September - December
+</th>
+
+</tr>
+<tr>
+ <td>
+    Friday: 14.00 – 21.00 (we cook until 19.00)<br>
+    Saturday: 11.30 - 20.00 (we cook until 19.00)<br>
+    Sunday: 11.30 – 20.00 (we cook until 19.00)
+</td>
+
+<td>
+    Friday: 15.00 – 21.00 (we cook until
+    19.00)<br>
+    Saturday: 11.30 - 20.00 (we cook until
+19.00)<br>
+Sunday: 11.30 – 19.00 (we cook until
+18.00)
+</td>
+
+</tr>
+
+                </table>
+               
+                <p class="nabidka">We are happy to prepare for you various large social events for you (weddings, family
+                    celebrations, funerals, banquets, meetings, trainings, etc.). OPENING HOURS by
+                    appointment.</p>
+        </div>
+        <div class="restaurace_end">e</div>
+
+    </div>
+    
+    <script src='jquery.js'></script>
+    <script src="main.js"></script>
+       <script src="action.js"></script>
+       <script src='popup.js'></script>
+       <script src="index.js"></script>
+       <script src="aktivity.js"></script>
+</body>
+
+</html>

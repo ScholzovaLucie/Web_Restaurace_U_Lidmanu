@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/png" href="../favicomatic/" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicomatic.zip" sizes="16x16" />
+</head>
+
+<body>
+    <div class="obrazky"id="obrazky">
+            
+        <div id="pozadi"class="pozadi">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="img/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="img/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+
+    <div id="topnav"class="topnav"  > 
+        <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>O nás</a>
+        <a href="kontakt.php">Kontakt</a>
+        <a href='restaurace.html'>Restaurace</a>
+        <a href='ubytovani.html'>Ubytování</a>
+        <a href='svatby.html'>Svatby</a>
+        <a class="longtop"href='pobytoveBalicka.html'>Pobytové balíčky</a>
+        <a href='cenik.html'>Ceník</a>
+        <a href='galerie.html'>Galerie</a>
+        <a href='rezervace.php'>Rezervace</a>
+        <btn onclick="location.href='aktivity.html';" id="jazykCZ"class="jazykCZaktivni">CZ</btn>
+         <btn onclick="location.href='http://en.ulidmanu.cz/aktivity.html';" id="jazykEN"class="jazykEN">EN</btn>
+        <btn onclick="location.href='pl/aktivity.html';" id="jazykPL"class="jazykPL">PL</btn>
+        <div class="canceltopnav" onclick="menoClose()">
+            <img alt="cancle" id="canceltopnav"class="canceltopnav" src="img/cancel.webp" alt="cancel">
+        </div>
+
+       
+    </div>
+
+
+    <div id="main" class="main">
+    
+        
+        <a id="down_restaurace" onclick="down()"title="Go down">
+            <img alt="down" id="down_restaurace_img"src="img/down.webp">
+       </a>
+       <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+        <img alt="up" id="up_restaurace_img"src="img/down.webp">
+    </a>
+
+        <div class="aktivitaaktivni1" id="aktivitaaktivni1">
+            <div id="text1">
+                <p class="text1">
+                    <h class="nadpis">
+                        Turistika<br>
+                    </h>
+                    <p class="para1">
+                    Stolové hory (PL) (1km)<br>
+                    Hejšovina (PL) (4km)<br>
+                    Bor (2,5km)<br>
+                    Bludné skály (PL) (3,5km) <br>
+                    Broumovské stěny (2km)<br>
+                    Ostaš (9km) <br>
+                    Hvězda (12km)<br>
+                    Adršpašské skály (25km) <br>
+                    Teplické skály (20km)<br>
+                    </p>
+                    <b class="b1">
+                    Další turistické informace:
+                    </b>
+                </p>
+
+                <div class="btt1prvni"onclick="location.href='https://www.policko.cz/cs/turistika/tipy-na-vylety';">
+                Tipy na výlet - pěší turistika
+                </div>
+                <div class="btt1druhy"onclick="location.href='https://www.policko.cz/cs/turistika/tipy-na-vylety';">
+                Tipy na výlet - cykloturistika
+                </div> 
+            </div>
+            
+
+           
+        </div>
+
+        <div class="aktivitaaktivni2" id="aktivitaaktivni2">
+            <div id="text2">
+                <p class="text2">
+                <h class="nadpis">
+                    Lyžování<br>
+                </h>
+                <div class="lyz1"><b>Machov: běžecké tratě 🔴</b></b><br>
+                Délka trasy: klasický styl 10 km,
+                bruslařský okruh 10 km 🔴<br><br></div>
+
+                <div class="lyz2"><b>Trasa přes Bor🟢</b><br>
+                Délka trasy: 10 km<br><br></div>
+
+                <div class="lyz3"><b>Trasa do závrch🟢</b><br>
+                Déka trasy: 10 km<br><br></div>
+
+                <div class="lyz4"><b>Machov - Veké poříčí🟢</b><br><br></div>
+
+                <div class="lyz5"><b>Bělí - Machovská Lhota - Machovský kříž - Pasterka - Machovská Lhota🟢</b></div>
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="aktivitaaktivni3" id="aktivitaaktivni3">
+            <div id="text3">
+                <p class="text3">
+                    <h class="nadpis">
+                        Koupaliště<br>
+                    </h>
+                    <div class="btt3prvni"onclick="location.href='https://www.sportvpolici.cz/koupaliste/#obsah';">
+                    Police nad Metují (6km)
+                    </div>
+                    <div class="btt3druhy"onclick="location.href='http://www.basenkudowa.pl/';">
+                    Kudowa Zdroj (15km)
+                    </div>
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="aktivitaaktivni5" id="aktivitaaktivni5">
+            <div id="text5">
+                <p class="text5">
+                    <h class="nadpis">
+                        Památaky<br>
+                    </h>
+                    <div class="btt5prvni"onclick="location.href='https://www.broumovsko.cz/region/pamatky';">
+                        Památky na Broumovsku
+                    </div>
+                    <div class="btt5druhy"onclick="location.href='http://www.zamek-nachod.cz/cs';">
+                        Zámek Náchod (18km)
+                    </div>
+                    <div class="btt5treti"onclick="location.href='http://www.zameknm.cz/cs/';">
+                        Zámek Nové Město nad Metují (25km)
+                    </div>
+                    <div class="btt5ctvrty"onclick="location.href='http://www.brezinka.cz/';">
+                        Pěchotní srub Březinka - Dobrošov (35km)
+                    </div>
+                    <div class="btt5paty"onclick="location.href='http://www.merkurpolice.cz/';">
+                        Muzeum stavebnice Merkur (7km)
+                    </div>
+
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="aktivitaaktivni6" id="aktivitaaktivni6">
+            <div id="text6">
+                <p class="text6">
+                    <h class="nadpis">
+                        Zajímavé odkazy o Machovsku<br>
+                    </h>
+                    <div class="btt6prvni"onclick="location.href='https://www.broumovsko.cz/region/pamatkyhttp://www.ceskatelevize.cz/porady/10393999546-divocina-bez-hranic/412236100221004-park-narodowy-gor-stolowych';">
+                        Národní park Stolové Hory
+                    </div>
+                    <div class="btt6druhy"onclick="location.href='http://hradec.idnes.cz/lezci-trenovali-slack-line-na-hejsovine-v-polsku-f6f-/hradec-zpravy.aspx?c=A140128_121757_hradec-zpravy_tuu';">
+                        Outdoorové aktivity na hejšovině
+                    </div>
+                    <div class="btt6treti"onclick="location.href='http://www.ceskatelevize.cz/porady/1126666764-toulava-kamera/213411000320217/video/';">
+                        Běžecké lyžování Machovsko
+                    </div>
+                    <div class="btt6ctvrty"onclick="location.href='http://www.ceskatelevize.cz/ivysilani/10394012509-hranice-bez-hranic/412236100191007-stolove-hory/';">
+                        Stolové hory
+                    </div>
+                    <div class="btt6paty"onclick="location.href='http://www.ceskatelevize.cz/porady/10213329031-sbohem-cesky-koutku/20956226648/';">
+                        Český koutek
+                    </div>
+
+                </p>
+            </div>
+
+        </div>
+
+        <div class="aktivitaaktivni7" id="aktivitaaktivni7">
+            <div id="text7">
+                <p class="text7">
+                    <h class="nadpis">
+                        Sportovní a společenské akce<br>
+                    </h>
+                    <div class="btt7prvni"onclick="location.href='http://www.machov-obec.cz';">
+                    Machovsko
+                    </div>
+                    <div class="btt7druhy"onclick="location.href='http://www.policko.cz';">
+                    Policko
+                    </div> 
+                </p>
+            </div>
+            
+        </div>
+
+    </div>
+
+     
+ <div class="end_aktivity">e</div>
+ <script src='jquery.js'></script>
+ <script src="main.js"></script>
+    <script src="action.js"></script>
+    <script src='popup.js'></script>
+    <script src="index.js"></script>
+    <script src="aktivity.js"></script>
+</body>
+
+</html>

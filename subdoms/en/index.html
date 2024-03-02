@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/webp" href="../favicomatic/" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="../favicomatic.zip" sizes="16x16" />
+    <link href="https://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
+</head>
+
+<body id="body">
+
+    <div class="obrazky"id="obrazky">
+                
+        <div id="pozadi"class="pozadi pozmobil">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+
+    <div id="topnav"class="topnav"> 
+       
+        <a class="active"onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>About us</a>
+        <a href="kontakt.php">Contact</a>
+        <a href='restaurace.html'>Restaurant</a>
+        <a class="longtopshort" href='ubytovani.html'>Accommodations</a>
+        <a href='svatby.html'>Weddings</a>
+        <a class="longtopa"href='pobytoveBalicka.html'>Advantageous stay packages</a>
+        <a href='cenik.html'>Price list</a>
+        <a href='galerie.html'>Gallery</a>
+        <a href='rezervace.php'>Reservation</a>
+
+        <btn onclick="location.href='https://ulidmanu.cz/index.html';" id="jazykCZ"class="jazykCZ">CZ</btn>
+        <btn onclick="location.href='index.html';" id="jazykEN"class="jazykENaktivni">EN</btn>
+        <btn onclick="location.href='https://pl.ulidmanu.cz/index.html';" id="jazykPL" class="jazykPL">PL</btn>
+        <btn onclick="location.href='https://de.ulidmanu.cz/index.html';" id="jazykDE" class="jazykDE">DE</btn>
+        <div class="canceltopnav" onclick="menoClose()">
+            <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+        </div>
+    </div>
+
+    
+    
+
+    <div id="main" class="main">
+<div class="upozorneni">
+            <p>From January 6 to January 26, the restaurant is closed for renovation.</p>
+        </div>
+        <div class="uvod1">
+            <img class="uvod1"id="uvod1" src=""alt="Uvod">
+        </div>
+        <a id="down_restaurace" onclick="down()"title="Go down">
+            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+        
+        <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+        <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+
+    <div id="uvod"class="uvod">
+                <div class="prvniObrazekTab"> 
+                    <div class="prvniRadek">Accommodation in the Table Mountains, Broumovsko region, Machovská Lhota. A sunny place in an
+                        attractive, undiscovered tourist area between the Broumov Walls and the Polish Table Mountains
+                        near Adršpach. Quiet rural atmosphere. Stylish environment in an old guesthouse from 1884.
+                        </div>
+                    <div class="prvniObrazek"> <img id="uvod" src="https://galerie.ulidmanu.cz/galerie/exterier/031_DJI_0437_Penzion_U_Lidmanu.webp" alt="Krajina">
+                </div>
+        
+        
+        <div class="druhyObrazekTab">
+            <div class="druhyObrazek"><img src="https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp" alt="Hospoda"></div>
+                <div class="druhyRadek">Our pension is located in the protected landscape area of Broumov in the romantic village of
+                    Machovská Lhota, which is surrounded on one side by the National Park Table Mountains with the
+                    famous Velká Hejšovina and on the other side by the Broumov Walls, the popular Adršpach is 22 km
+                    away from us. Machov region is a paradise for hiking, cycling, cross-country skiing and bouldering.
+                    Lovers of a quiet rural atmosphere and family environment will find their place here.</div>
+                </div>
+            
+    </div>
+
+    <div class="pribeh">
+        <div class="text">
+            <h2>The story of the pension</h2>
+            Šrám family – 1884 – 1950<br>
+            The original owner was Mr. Eduard Šrám. He added a pub and also a guest room on the 1 st floor to
+            the original Broumov-type farmhouse. He lived in the guesthouse together with his wife and eight
+            children. He also created and expanded the social hall for the needs of the Lhota Volunteer Theatre.
+            He was additionally an innkeeper who, after the declaration of war in 1914, allegedly hit a picture of
+            the emperor with a pint in the pub out of anger and broke it, as can be seen on it to this day.<br>
+            Lidman family - 1950-2014<br>
+            In 1950, the Lidman family bought the guesthouse, but in 1953 the communist regime nationalised it.
+            At least they could live and work there. The Lidman pub was frequented by groups of tramps until
+            the late 1980s because here, "at the end of the world,"" near the hermetically sealed border, they
+            remained outside the regime´s reach. In the 1990s, the Lidman family got the guest house back and
+            ran it until 2014.<br>
+            Šturm family since 2014<br>
+            Since 2014 it has been owned by the Šturm family.
+        </div>
+        
+    </div>
+
+    <div class="tretiObrazekTab">
+        <div class="tretiObrazek"><img src="https://galerie.ulidmanu.cz/galerie/exterier/022_HZ6_3836_Penzion_U_Lidmanu.webp" alt="Hospoda"></div>
+            <div class="tretiRadek"><h2>Apple tree “U Lidmanů”</h2>
+                Blenheim renet, winner of the Czech competition “Tree</div>
+            </div>
+
+
+    <div class="end_index">e</div>
+</div>
+
+  
+
+<script src='jquery.js'></script>
+<script src="main.js"></script>
+   <script src="action.js"></script>
+   <script src='popup.js'></script>
+   <script src="index.js"></script>
+   <script src="aktivity.js"></script>
+</body>
+
+</html>

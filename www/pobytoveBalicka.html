@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <div class="obrazky"id="obrazky">
+                
+        <div id="pozadi"class="pozadi">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+
+         <div id="topnav"class="topnav"  > 
+            <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>O nás</a>
+            <a href="kontakt.php">Kontakt</a>
+            <a href='restaurace.html'>Restaurace</a>
+            <a href='ubytovani.html'>Ubytování</a>
+            <a href='svatby.html'>Svatby</a>
+            <a class="active longtop"href='pobytoveBalicka.html'>Pobytové balíčky</a>
+            <a href='cenik.html'>Ceník</a>
+            <a href='galerie.html'>Galerie</a>
+            <a href='rezervace.php'>Rezervace</a>
+            <btn onclick="location.href='pobytoveBalicka.html';" id="jazykCZ"class="jazykCZaktivni">CZ</btn>
+            <btn onclick="location.href='https://en.ulidmanu.cz/pobytoveBalicka.html';" id="jazykEN"class="jazykEN">EN</btn>
+            <btn onclick="location.href='https://pl.ulidmanu.cz/pobytoveBalicka.html';" id="jazykPL"class="jazykPL">PL</btn>
+            <btn onclick="location.href='https://de.ulidmanu.cz/pobytoveBalicka.html';" id="jazykDE"class="jazykDE">DE</btn>
+            <div class="canceltopnav" onclick="menoClose()">
+                <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+            </div>
+            
+        </div>
+
+    <div id="main" class="main">
+    
+    <div class="balicky" id="balicky">
+        <div id="balickyCLose" class="balickyCLose" onclick="closeBalicek()">
+            <span class="close-btn"></span>
+        </div>
+        <div onclick="balicekclicked(1)"class="balicek1" id="balicek1">
+            <p id="balicek1p">Prodloužený víkend ve Stolových horách</p>
+            <img loading="lazy" id="balicek1img" src="https://galerie.ulidmanu.cz/pobytoveBalicky/b4387.webp" alt="Prodloužený víkend ve Stolových horách">
+        </div>
+        <div onclick="balicekclicked(2)"class="balicek2" id="balicek2">
+            <p id="balicek2p">Pětidenní turisticko-poznávací pobyt na Machovsku</p>
+            <img loading="lazy" id="balicek2img"src="https://galerie.ulidmanu.cz/pobytoveBalicky/b4460.webp" alt="Pětidenní turisticko-poznávací pobyt na Machovsku">
+        </div>
+        <div onclick="balicekclicked(3)"class="balicek3" id="balicek3">
+            <p id="balicek3p">Týdenní dovolená na Broumovsku</p>
+            <img loading="lazy" id="balicek3img"src="https://galerie.ulidmanu.cz/pobytoveBalicky/b4345.webp" alt="Týdenní dovolená na Broumovsku">
+        </div>
+    </div>
+           
+            <div class="balicek1Rozbaleno" id="balicek1Rozbaleno">
+
+                <img loading="lazy" class="pobytObrazek"src="https://galerie.ulidmanu.cz/stolove_hory.webp" alt="">
+
+                <div class="pobytprvni">
+                    (pro 2 osoby, čtvrtek-neděle) v termínu od března do června, od září do listopadu
+                    <nav></nav>
+                    Vyražte na turistický prodloužený víkend do Stolových hor.
+                </div>
+
+                <div class="pobytdruhy">
+                    <b>Balíček obsahuje:</b>
+                    <nav></nav>
+                    3 x ubytování
+                        <nav></nav>
+                        3 x bufetová snídaně
+                        <nav></nav>
+                        1 x zapůjčení piknikového batohu s vydatným občerstvením na celý den
+                        <nav></nav>
+                        1 x tříchodová večeře s lahví moravského vína
+                </div>
+
+                <div class="pobyttreti">
+                    <b>Doporučené aktivity:</b>
+                    <nav></nav>
+                    Národní park Stolové hory (Hejšovina, Bílé skály, Bludné skály), Broumovské stěny (Signál,
+                    Machovský kříž, Hvězda), stolová hora Ostaš, Adršpašské skály, Teplické skály, Muzeum
+                    Merkur, Muzeum papírových modelů – Police nad Metují, lázně Kudowa Zdroj (PL), poutní
+                    místo Vambeřice (PL), zámky - Náchod, Nové město nad Metují, vojenská pevnost
+                    Dobrošov, klášter Broumov, Broumovská skupina kostelů, Klodzko (PL), Wroclaw (PL),
+                    cykloturistika po vyznačených trasách.
+                </div>
+                
+                <div class="pobytctvrty">
+                    <b id="pobytctvrty">Cena: 4.190,-Kč / 2 osoby / pobyt</b>
+                </div>
+
+                <div class="pobytpaty">
+                    (cena nezahrnuje rekreační a ubytovací poplatek ve výši 20,-Kč/osoba/noc)
+                </div>
+    
+            </div>
+    
+    
+            <div class="balicek2Rozbaleno" id="balicek2Rozbaleno">
+                <img loading="lazy" class="pobytObrazek"src="https://galerie.ulidmanu.cz/machov.webp" alt="">
+
+                <div class="pobytprvni">
+                    (pro 2 osoby, neděle-pátek) v termínu květen, červen, září.
+                </div>
+
+                <div class="pobytdruhy">
+                    <b>Balíček obsahuje:</b>
+                    <nav></nav>
+                    5 x ubytování
+                    <nav></nav>
+                    5 x bufetová snídaně
+                    <nav></nav>
+                    3 x balíček s občerstvením na cesty
+                </div>
+
+                <div class="pobyttreti">
+                    <b>Doporučené aktivity:</b>
+                    <nav></nav>
+                    Národní park Stolové hory (Hejšovina, Bílé skály, Bludné skály), Broumovské stěny (Signál,
+                    Machovský kříž, Hvězda), stolová hora Ostaš, Adršpašské skály, Teplické skály, Muzeum
+                    Merkur, Muzeum papírových modelů – Police nad Metují, lázně Kudowa Zdroj (PL), poutní
+                    místo Vambeřice (PL), zámky - Náchod, Nové město nad Metují, vojenská pevnost
+                    Dobrošov, klášter Broumov, Broumovská skupina kostelů, Klodzko (PL), Wroclaw (PL),
+                    cykloturistika po vyznačených trasách.
+                </div>
+
+                <div class="pobytctvrty">
+                    <b>Cena: 5.390,-Kč / 2 osoby/pobyt</b>
+                </div>
+
+                <div class="pobytpaty">
+                    (ceny nezahrnují rekreační a ubytovací poplatek ve výši 20,-Kč/osoba/noc)
+                </div>
+    
+            </div>
+    
+    
+            <div class="balicek3Rozbaleno" id="balicek3Rozbaleno">
+                <img loading="lazy" class="pobytObrazek"src="https://galerie.ulidmanu.cz/broumovsko.webp" alt="">
+
+                <div class="pobytprvni">
+                    (pro 2 – 4 osoby, sobota-sobota) v termínu od července do srpna
+                    <nav></nav>
+                    (pro 2 – 4 osoby, neděle-neděle) v termínu od dubna do června a od září do října
+                </div>
+
+                <div class="pobytdruhy">
+                    <b>Balíček obsahuje:</b>
+                    <nav></nav>
+                    7 x ubytování
+                    <nav></nav>
+                    7 x bufetová snídaně
+                    <nav></nav>
+                    1 x balíček s občerstvením na cesty
+                </div>
+
+                <div class="pobyttreti">
+                    <b>Doporučené aktivity:</b>
+                    <nav></nav>
+                    Národní park Stolové hory (Hejšovina, Bílé skály, Bludné skály), Broumovské stěny (Signál,
+                    Machovský kříž, Hvězda), stolová hora Ostaš, Adršpašské skály, Teplické skály, Muzeum
+                    Merkur, Muzeum papírových modelů – Police nad Metují, lázně Kudowa Zdroj (PL), poutní
+                    místo Vambeřice (PL), zámky - Náchod, Nové město nad Metují, vojenská pevnost
+                    Dobrošov, klášter Broumov, Broumovská skupina kostelů, Klodzko (PL), Wroclaw (PL),
+                    cykloturistika po vyznačených trasách.
+                </div>
+
+                <div class="pobytctvrtydlouhy">
+                    <b>7.390,-Kč / 2 osoby / pokoj
+                        <nav></nav>
+                        10.490,-Kč / 3 osoby / pokoj
+                        <nav></nav>
+                        11.990,-Kč / 4 osoby / pokoj</b>
+                </div>
+
+                <div class="pobytpaty">
+                    (ceny nezahrnují rekreační a ubytovací poplatek ve výši 20,-Kč/osoba/noc)
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+
+    <script src='ubytovani.js'></script>
+    <script src='aktivity.js'></script>
+</body>
+
+</html>

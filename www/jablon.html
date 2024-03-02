@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styly_ubytovani_mobil.css">
+    <link rel="icon" type="image/png" href="../favicomatic/" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicomatic.zip" sizes="16x16" />
+    
+</head>
+
+<body>
+    <div class="obrazky"id="obrazky">
+                
+        <div id="pozadi"class="pozadi">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="img/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="img/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+
+
+    <div id="topnav"class="topnav"  > 
+        <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>O nás</a>
+        <a href="kontakt.php">Kontakt</a>
+        <a href='restaurace.html'>Restaurace</a>
+        <a href='ubytovani.html'>Ubytování</a>
+        <a href='svatby.html'>Svatby</a>
+        <a class="longtop"href='pobytoveBalicka.html'>Pobytové balíčky</a>
+        <a href='cenik.html'>Ceník</a>
+        <a href='galerie.html'>Galerie</a>
+        <a href='rezervace.php'>Rezervace</a>
+        <btn onclick="location.href='../index.html';" id="jazykCZ"class="jazykCZaktivni">CZ</btn>
+        <btn onclick="location.href='en/index.html';" id="jazykEN"class="jazykEN">EN</btn>
+        <btn onclick="location.href='pl/index.html';" id="jazykPL"class="jazykPL">PL</btn>
+        <div class="canceltopnav" onclick="menoClose()">
+            <img id="canceltopnav"class="canceltopnav" src="img/cancel.webp" alt="cancel">
+        </div>
+        
+    </div>
+
+    <div id="main" class="main">
+
+        <a id="down_restaurace" onclick="down()"title="Go down">
+            <img id="down_restaurace_img"src="img/down.webp">
+       </a>
+       <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+        <img id="up_restaurace_img"src="img/down.webp">
+    </a>
+
+    <div class="uvod1">
+        <img class="uvod1"id="jablon1" src=""alt="Uvod">
+    </div>
+    
+    <div>
+          <!--  IFRAME   -->
+    </div>
+       
+       
+        <div class="center">
+            
+        </div>
+        <div class="end">e</div>
+    </div>
+
+    
+
+    <script src='jquery.js'></script>
+    <script src="main.js"></script>
+       <script src="action.js"></script>
+       <script src='popup.js'></script>
+       <script src="index.js"></script>
+       <script src="aktivity.js"></script>
+
+</body>
+
+</html>

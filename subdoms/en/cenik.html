@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/webp" href="../favicomatic/" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="../favicomatic.zip" sizes="16x16" />
+</head>
+
+<body>
+
+    <div class="obrazky"id="obrazky">
+                
+        <div id="pozadi"class="pozadi">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+
+    <div id="topnav"class="topnav"  > 
+        <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>About us</a>
+        <a href="kontakt.php">Contact</a>
+        <a href='restaurace.html'>Restaurant</a>
+        <a class="longtopshort"href='ubytovani.html'>Accommodations</a>
+        <a href='svatby.html'>Weddings</a>
+        <a class="longtopa"href='pobytoveBalicka.html'>Advantageous stay packages</a>
+        <a class="active"href='cenik.html'>Price list</a>
+        <a href='galerie.html'>Gallery</a>
+        <a href='rezervace.php'>Reservation</a>
+        <btn onclick="location.href='https://ulidmanu.cz/cenik.html';" id="jazykCZ" class="jazykCZ">CZ</btn>
+        <btn onclick="location.href='cenik.html';" id="jazykEN" class="jazykENaktivni">EN</btn>
+        <btn onclick="location.href='https://pl.ulidmanu.cz/cenik.html';" id="jazykPL" class="jazykPL">PL</btn>
+        <btn onclick="location.href='https://de.ulidmanu.cz/cenik.html';" id="jazykDE" class="jazykDE">DE</btn>
+        <div class="canceltopnav" onclick="menoClose()">
+            <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+        </div>
+        
+    </div>
+    
+    <div id="main" class="main">
+        <a id="down_restaurace" onclick="down()"title="Go down">
+            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+        <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+            <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        </a>
+    
+            <div class="cenik_dospeli">
+                <div> 
+                    The listed prices are per person per night in rooms including buffet breakfast.
+                    <div class="ceny_pokoju">
+                        <div>
+                            <b class="b_1">Double room</b>
+                            <p class="p_1">
+                                520-680 CZK
+                                per person
+                                per night*
+                            </p>
+                        </div>
+                       
+                        <div>
+                           <b class="b_2">
+                            Three-bed
+                            room
+                            </b>
+                            <p class="p_2">
+                                500-620
+                                CZK per
+                                person per
+                                night*
+                            </p> 
+                        </div>
+                        
+                        <div>
+                          <b class="b_3">
+                            Four-bed
+                            room
+                            </b>
+                            <p class="p_3">
+                                450-550 CZK
+                                per person
+                                per night*
+                            </p>   
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="dospeli_obrazek">
+                    <img src="https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp" alt="">
+                </div>
+            </div>
+            <div class="blok_poplatky" >
+    <div class="poplatek">
+        price does not include recreation and accommodation fee to the municipality CZK 20/night/person (18-70 years)
+    </div>
+    <div class="doplnek">
+        *the price depends on the length of stay, type of room, public holidays/holidays and current occupancy of the pension.
+    </div>
+    </div>
+    <div class="cenik_deti">
+        <div class="deti_obrazek">
+            <img src="https://galerie.ulidmanu.cz/galerie/pokoje/058_HZ6_3886_Penzion_U_Lidmanu.webp" alt="">
+        </div>
+        <div>
+            <h2>Accommodation for children</h2>
+            <p class="p_2">
+                The indicated prices are per child per night in a room with breakfast accompanied by two adults.
+                Children under 2 years stay free of charge and are not entitled to any services.
+            </p>
+            <b class="b_1">Children from 2 to 10 years</b>
+            <p class="p_1">400 CZK</p>
+        </div>
+     </div>
+
+    <div class="cenik_priplatyk">
+       
+        <div>
+            <h2>Surcharges</h2>
+            <table class="priplatky">
+                <tr>
+                    <th>
+                        Single room (only 1 person in a double room)
+                    </th>
+                    <td>
+                        CZK 850
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Dinner (2-course menu)
+                    </th>
+                    <td>
+                        189 CZK
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Dinner for children 3-10 years
+                    </th>
+                    <td>
+                        129 CZK
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Dogs
+                    </th>
+                    <td>
+                        90 CZK/night or 400 CZK/stay
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Surcharge for one night stay
+                    </th>
+                    <td>
+                        130 CZK/person
+                    </td>
+                </tr>
+            </table>
+        </div>
+ <div class="priplatky_obrazek">
+            <img src="https://galerie.ulidmanu.cz/galerie/pokoje/081_HZ6_3941_Penzion_U_Lidmanu.webp" alt="">
+        </div>
+    </div>
+</div>
+
+    <div class="cenik_info">
+        <div>
+            <h2>Additional information</h2>
+            <ul>
+                <li>In high season, we prefer WEEKLY STAY (Saturday-Saturday)</li>
+                <li>You can order a stay WITHOUT BREAKFAST. 460 CZK - 560 CZK/person</li>
+                <li>On request, we will make a gift certificate for you.</li>
+            </ul>
+        </div>
+        <div class="info_obrazek">
+            <img src="https://galerie.ulidmanu.cz/galerie/interier/106_HZ6_3993_Penzion_U_Lidmanu.webp" alt="">
+        </div>
+    </div>
+
+            <div class="end_cenik">e</div>
+    
+
+    </div>
+
+        <script src='jquery.js'></script>
+        <script src="main.js"></script>
+           <script src="action.js"></script>
+           <script src='popup.js'></script>
+           <script src="index.js"></script>
+           <script src="aktivity.js"></script>
+
+
+</body>
+
+</html>

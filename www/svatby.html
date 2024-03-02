@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurace u Lidmanů</title>
+    <link id="styly"rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/png" href="../favicomatic/" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicomatic.zip" sizes="16x16" />
+</head>
+
+<body>
+
+    <div class="obrazky"id="obrazky">
+                
+        <div id="pozadi"class="pozadi">
+            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+    
+            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+        </div>
+    </div>
+    
+        <div id="topnav"class="topnav">
+            <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>O nás</a>
+            <a href="kontakt.php">Kontakt</a>
+            <a href='restaurace.html'>Restaurace</a>
+            <a href='ubytovani.html'>Ubytování</a>
+            <a class="active"href='svatby.html'>Svatby</a>
+            <a class="longtop"href='pobytoveBalicka.html'>Pobytové balíčky</a>
+            <a href='cenik.html'>Ceník</a>
+            <a href='galerie.html'>Galerie</a>
+            <a href='rezervace.php'>Rezervace</a>
+            <btn onclick="location.href='svatby.html';" id="jazykCZ"class="jazykCZaktivni">CZ</btn>
+            <btn onclick="location.href='https://en.ulidmanu.cz/svatby.html';" id="jazykEN"class="jazykEN">EN</btn>
+            <btn onclick="location.href='https://pl.ulidmanu.cz/svatby.html';" id="jazykPL"class="jazykPL">PL</btn>
+<btn onclick="location.href='https://de.ulidmanu.cz/svatby.html';" id="jazykDE"class="jazykDE">DE</btn>
+            <div class="canceltopnav" onclick="menoClose()">
+                <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+            </div>
+        </div>
+
+    <div id="main" class="main">
+        <a id="down_restaurace" onclick="down()"title="Go down">
+            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+       </a>
+       <a id="up_restaurace" onclick="topFunction()"title="Go to top">
+        <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+    </a>
+    
+        <div class="uvod1">
+        <img class="uvod1"id="svatba1" src=""alt="Uvod">
+    </div>
+    
+        <div class="svatby">
+            <p class="psvat">Naše restaurace je ideální k uspořádání Vaší svatby a to nejen z důvodu romantické okolní
+                krajiny, ale i díky uspořádání našich prostor.</p>
+    
+            <list class="svat">
+                <ul class="radek">
+                    <li>Velký společenský sál – svatební tabule až pro 70 osob</li>
+                    <li>Celková kapacita svatby až 90 osob</li>
+                    <li>Svatební menu, raut dle Vašich představ a požadavků</li>
+                    <li>Pro menší svatby nabízíme salónek restaurace s kapacitou 20 osob</li>
+                </ul>
+            </list>
+             <img class="srdce" src="https://galerie.ulidmanu.cz/two-hearts_roh_hnedy.webp">  
+        </div>
+    
+        <div class="end_svtba">e</div>
+
+    </div>
+
+    <script src='jquery.js'></script>
+    <script src="main.js"></script>
+       <script src="action.js"></script>
+       <script src='popup.js'></script>
+       <script src="index.js"></script>
+       <script src="aktivity.js"></script>
+</body>
+
+</html>
