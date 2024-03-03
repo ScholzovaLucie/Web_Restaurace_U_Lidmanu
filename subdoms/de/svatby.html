@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurace u Lidmanů</title>
-    <link id="styly"rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="icon" type="image/webp" href="../favicomatic/" sizes="32x32" />
-    <link rel="icon" type="image/webp" href="../favicomatic.zip" sizes="16x16" />
+    <link id="styly" rel="stylesheet" href="css/style.css">
+    <link id="styly" rel="stylesheet" href="css/styly_mobil.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-16x16.png" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-32x32.png" sizes="16x16" />
 </head>
 
 <body>
@@ -43,16 +44,17 @@
         </div>
 
     <div id="main" class="main">
-        <a id="down_restaurace" onclick="down()"title="Go down">
-            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-       </a>
-       <a id="up_restaurace" onclick="topFunction()"title="Go to top">
-        <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-    </a>
-    
-        <div class="uvod1">
-        <img class="uvod1"id="svatba1" src=""alt="Uvod">
-    </div>
+        <div class="uvod_svatby">
+            <img class="uvod_svatby" id="uvod_svatby" src="" alt="Uvod">
+        </div>
+        <div class="scroll">
+            <a id="up" onclick="topFunction()" title="Go to top">
+                <img id="up_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
+            <a id="down" onclick="down()" title="Go down">
+                <img id="down_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
+        </div>
     
         <div class="svatby">
             <p class="psvat">Unser Restaurant ist nicht nur wegen der romantischen Umgebung, sondern auch wegen der
@@ -69,17 +71,11 @@
             </list>
              <img class="srdce" src="https://galerie.ulidmanu.cz/two-hearts_roh_hnedy.webp">  
         </div>
-    
-        <div class="end_svtba">e</div>
 
     </div>
 
-    <script src='jquery.js'></script>
-    <script src="main.js"></script>
-       <script src="action.js"></script>
-       <script src='popup.js'></script>
-       <script src="index.js"></script>
-       <script src="aktivity.js"></script>
+    <script src='js/aktivity.js'></script>
+    <script src='js/welcome_img_svatba.js'></script>
 </body>
 
 </html>

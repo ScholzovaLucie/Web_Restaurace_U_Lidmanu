@@ -6,143 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurace u Lidmanů</title>
-    <link id="styly"rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="icon" type="image/webp" href="../favicomatic/" sizes="32x32" />
-    <link rel="icon" type="image/webp" href="../favicomatic.zip" sizes="16x16" />
-    
+    <link id="styly" rel="stylesheet" href="css/style.css">
+    <link id="styly" rel="stylesheet" href="css/styly_mobil.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-16x16.png" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-32x32.png" sizes="16x16" />
 </head>
 
 <body>
 
-    <div class="obrazky"id="obrazky">
-                
-        <div id="pozadi"class="pozadi">
-            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
-    
-            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+    <div class="obrazky" id="obrazky">
+
+        <div id="pozadi" class="pozadi">
+            <input id="menu" onclick="menoShow()" class="menu" type="image"
+                src="https://galerie.ulidmanu.cz/menu.webp" />
+
+            <img id="uvodlogo" class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo">
         </div>
     </div>
 
-<div id="topnav"class="topnav"  > 
-    <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>Über uns</a>
-    <a href="kontakt.php">Hochzeit</a>
-    <a href='restaurace.html'>Restaurant</a>
-    <a class="longtopshort active"href='ubytovani.html'>Unterkünfte</a>
-    <a href='svatby.html'>Hochzeiten</a>
-    <a class="longtop"href='pobytoveBalicka.html'>Günstige Aufenthaltspakete</a>
-    <a href='cenik.html'>Preisliste</a>
-    <a href='galerie.html'>Galerie</a>
-    <a href='rezervace.php'>Reservierung</a>
-    <btn onclick="location.href='https://ulidmanu.cz/ubytovani.html';" id="jazykCZ"class="jazykCZ">CZ</btn>
-    <btn onclick="location.href='https://en.ulidmanu.cz/ubytovani.html';" id="jazykEN"class="jazykEN">EN</btn>
-    <btn onclick="location.href='https://pl.ulidmanu.cz/ubytovani.html';" id="jazykPL"class="jazykPL">PL</btn>
-    <btn onclick="location.href='ubytovani.html';" id="jazykDE" class="jazykDEaktivni">DE</btn>
-    <div class="canceltopnav" onclick="menoClose()">
-        <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+    <div id="topnav" class="topnav">
+        <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>Über uns</a>
+        <a href="kontakt.php">Hochzeit</a>
+        <a href='restaurace.html'>Restaurant</a>
+        <a class="longtopshort active" href='ubytovani.html'>Unterkünfte</a>
+        <a href='svatby.html'>Hochzeiten</a>
+        <a class="longtop" href='pobytoveBalicka.html'>Günstige Aufenthaltspakete</a>
+        <a href='cenik.html'>Preisliste</a>
+        <a href='galerie.html'>Galerie</a>
+        <a href='rezervace.php'>Reservierung</a>
+        <btn onclick="location.href='https://ulidmanu.cz/ubytovani.html';" id="jazykCZ" class="jazykCZ">CZ</btn>
+        <btn onclick="location.href='https://en.ulidmanu.cz/ubytovani.html';" id="jazykEN" class="jazykEN">EN</btn>
+        <btn onclick="location.href='https://pl.ulidmanu.cz/ubytovani.html';" id="jazykPL" class="jazykPL">PL</btn>
+        <btn onclick="location.href='ubytovani.html';" id="jazykDE" class="jazykDEaktivni">DE</btn>
+        <div class="canceltopnav" onclick="menoClose()">
+            <img id="canceltopnav" class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+        </div>
+
     </div>
-    
-</div>
 
-<div id="main" class="main">
-    <a id="down_restaurace" onclick="down()"title="Go down">
-        <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-   </a>
-   <a id="up_restaurace" onclick="topFunction()"title="Go to top">
-    <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-</a>
-    <div class="uvod1">
-        <img class="uvod1"id="ubytovani1" src=""alt="Uvod">
-    </div>
-    <div class="oteviraciDoba"id="oteviraciDoba">
-        Öffnungszeiten der Pension: täglich nach Voranmeldung<br>
-        Öffnungszeiten des Restaurants für HOTELGÄSTE :<br>
-        <br><br>
-    Mo - Do 8:00-9:30 und 18:00-20:00<br>
+    <div id="main" class="main">
 
-    Fr 8:00-9:30 und 11:30 - 21:00<br>
-    Sa 8:00-9:30 und 11:30 - 21:00<br>
-    So 8:00-9:30 und 11:30 - 20:00<br>
-    <br>
-    <p class="info">Außerhalb der Öffnungszeiten können unsere Gäste unser Restaurant von Montag bis
-        Donnerstag auch als SB-BAR nutzen – wir erklären Ihnen die Details vor Ort</p>
+        <div class="uvod_ubytovani">
+            <img class="uvod_ubytovani" id="uvod_ubytovani" src="" alt="Uvod">
+        </div>
+        <div class="scroll">
+            <a id="up" onclick="topFunction()" title="Go to top">
+                <img id="up_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
+            <a id="down" onclick="down()" title="Go down">
+                <img id="down_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
+        </div>
+        <div class="ubytovani">
+            <div class="oteviraciDoba" id="oteviraciDoba">
+                Öffnungszeiten der Pension: täglich nach Voranmeldung<br>
+                Öffnungszeiten des Restaurants für HOTELGÄSTE :<br>
+                <br><br>
+                Mo - Do 8:00-9:30 und 18:00-20:00<br>
+
+                Fr 8:00-9:30 und 11:30 - 21:00<br>
+                Sa 8:00-9:30 und 11:30 - 21:00<br>
+                So 8:00-9:30 und 11:30 - 20:00<br>
+                <br>
+                <p class="info">Außerhalb der Öffnungszeiten können unsere Gäste unser Restaurant von Montag bis
+                    Donnerstag auch als SB-BAR nutzen – wir erklären Ihnen die Details vor Ort</p>
 
 
-</div>
+            </div>
 
-</div>
-    
-<div class="lokal"id="lokal">
-    <div class="obrazekPokoj">
-        <img id="obrazekPokoj" src="https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp" alt="Lokal">
-    </div>
-    <div class="radekPokoj">
-        In unserer Pension bieten wir Unterkunft in fünf Zimmern mit eigenem Bad mit einer
-        Gesamtkapazität von 13 Betten und 3 festen Zustellbetten. Die Zimmer sind mit antiken
-        Landhausmöbeln (die Betten sind jedoch den heutigen Anforderungen für gesunden Schlaf
-        angepasst) ausgestattet, hochwertige Bettwäsche, Handtücher und kostenfreier WLAN-
-        Internetzugang. In den Gemeinschaftsräumen der
-    </div>
-</div>
+        </div>
 
-<div class="zahradka">
-   <div class="obrazekZahradka">
-<img  src="https://galerie.ulidmanu.cz/galerie/exterier/004_HZ6_3765_Penzion_U_Lidmanu.webp" alt="Zahradka">
-   </div>
-   
-   
-    <div class="radekZahradka"> 
-        Zum Entspannen können Sie den Gemeinschaftsraum mit TV, Gesellschaftsspielen,
-        Bibliothek und Kinderecke nutzen. Im Gesellschaftssaal können Sie auch Tischtennis
-        spielen. Sie können Sommerabende angenehmer gestalten, indem Sie auf der Terrasse unseres
-        Restaurants sitzen.
-    </div>
-</div>
+        <div class="infoBlock" id="infoBlock">
+            <div class="obrazek">
+                <img id="obrazek"
+                    src="https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp" alt="Lokal">
+            </div>
+            <div class="text">
+                In unserer Pension bieten wir Unterkunft in fünf Zimmern mit eigenem Bad mit einer
+                Gesamtkapazität von 13 Betten und 3 festen Zustellbetten. Die Zimmer sind mit antiken
+                Landhausmöbeln (die Betten sind jedoch den heutigen Anforderungen für gesunden Schlaf
+                angepasst) ausgestattet, hochwertige Bettwäsche, Handtücher und kostenfreier WLAN-
+                Internetzugang. In den Gemeinschaftsräumen der
+            </div>
+        </div>
 
-<div class="salonek">
-   <div class="ObrazekSalonek">
-      <img src="https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp" alt="Salonek">
-   </div>
-  
-    
-    <div class="radekPobyt">
-        <h2>Zusätzliche Informationen zu Ihrem Aufenthalt</h2>
-        <ul>
-            <li>Die gesamte Pension ist rauchfrei.
-                <li>Das Parken ist kostenlos bei der Pension.</li>
+        <div class="infoBlock">
+            <div class="obrazek">
+                <img src="https://galerie.ulidmanu.cz/galerie/exterier/004_HZ6_3765_Penzion_U_Lidmanu.webp"
+                    alt="Zahradka">
+            </div>
+
+
+            <div class="text">
+                Zum Entspannen können Sie den Gemeinschaftsraum mit TV, Gesellschaftsspielen,
+                Bibliothek und Kinderecke nutzen. Im Gesellschaftssaal können Sie auch Tischtennis
+                spielen. Sie können Sommerabende angenehmer gestalten, indem Sie auf der Terrasse unseres
+                Restaurants sitzen.
+            </div>
+        </div>
+
+        <div class="infoBlock">
+            <div class="obrazek">
+                <img src="https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp"
+                    alt="Salonek">
+            </div>
+
+
+            <div class="text">
+                <h2>Zusätzliche Informationen zu Ihrem Aufenthalt</h2>
+                <ul>
+                    <li>Die gesamte Pension ist rauchfrei.
+                    <li>Das Parken ist kostenlos bei der Pension.</li>
                     <li>NACH VORHERIGER ABSPRACHE können Sie auch Ihren Hund für
                         Spaziergänge in die Natur mitbringen.</li>
-<li>Ihre Fahrräder, Skier oder Kinderwagen deponieren wir für Sie in den
-    Räumlichkeiten der Pension.</li>
-<li>Auf Wunsch reinigen wir die Zimmer während Ihres Aufenthaltes gerne.</li>
-</ul>
-    </div>
-</div>
+                    <li>Ihre Fahrräder, Skier oder Kinderwagen deponieren wir für Sie in den
+                        Räumlichkeiten der Pension.</li>
+                    <li>Auf Wunsch reinigen wir die Zimmer während Ihres Aufenthaltes gerne.</li>
+                </ul>
+            </div>
+        </div>
 
-<div class="sal">
-    <div class="obrazekSal" >
-<img src="https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp" alt="Sal">
-    </div>
-  
-     
-     <div class="radekStravovani">
-        <h2>Essen</h2>
-        Der Übernachtungspreis beinhaltet ein Frühstücksbuffet, das wir täglich von 8:00 bis
-        9:00 Uhr servieren.
-        Sie können auch ABENDESSEN bestellen, die wir Ihnen von Montag bis Donnerstag in
-        Form eines Zwei-Gänge-Menüs servieren. Von Freitag bis Sonntag können Sie à la carte
-        wählen.
-     </div>
- </div>
-        <div class="end">e</div>
-</div>
+        <div class="infoBlock">
+            <div class="obrazek">
+                <img src="https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp" alt="Sal">
+            </div>
 
-    <script src='jquery.js'></script>
-    <script src="main.js"></script>
-       <script src="action.js"></script>
-       <script src='popup.js'></script>
-       <script src="index.js"></script>
-       <script src="aktivity.js"></script>
+
+            <div class="text">
+                <h2>Essen</h2>
+                Der Übernachtungspreis beinhaltet ein Frühstücksbuffet, das wir täglich von 8:00 bis
+                9:00 Uhr servieren.
+                Sie können auch ABENDESSEN bestellen, die wir Ihnen von Montag bis Donnerstag in
+                Form eines Zwei-Gänge-Menüs servieren. Von Freitag bis Sonntag können Sie à la carte
+                wählen.
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script src='js/aktivity.js'></script>
+    <script src='js/welcome_img_ubytovani.js'></script>
+    
 
 </body>
 
