@@ -518,18 +518,20 @@
         padding: 1vw;
         font-size: 18px;
         transition: all .5s;
+        font-size: medium;
     }
 
-    
 
     .balickyCLose {
         z-index: 1024;
         position: absolute;
-        display: none;
-        width: 20px;
-        height: 20px;
-        top: 10vh;
-        right: 3vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: right;
+        width: 50%;
+        height: 50%;
+        top: 0%;
+        right: 0;
         transition: all .5s;
     }
 
@@ -563,14 +565,16 @@
 
     .balicek_rozbaleno.active {
         position: absolute;
-        top: 16vh;
+        top: 20vh;
         left: 0vw;
         background-color: #4b6b856c;
-        width: 100%;
+        width: 96%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 15px;
+        padding: 2%;
     }
 
     .balicek_main {
@@ -580,21 +584,31 @@
         align-items: center;
         justify-content: center;
         margin: 2vw;
-        gap: 2%;
+        gap: 5px;
     }
+
    .balicek_main .obrazek {
         width: 40vw;
     }
-
+    .balicek_maly.active {
+        color: rgb(75, 107, 133) !important;
+        background-color: rgba(158, 181, 201, 0.65)  !important;
+    }
     .balicek_maly.zmensen {
-        width: 33%;
-        height: 5vh;
-        font-size: small;
+        width: 33% !important;
+        height: 9vh !important;
+        font-size: small !important; 
     }
 
     .balicky.zmensen {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: 10vh;
+        margin-top: 0 !important;
     }
 
     .balicek_maly.zmensen img{

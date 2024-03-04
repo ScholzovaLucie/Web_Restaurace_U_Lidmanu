@@ -1208,16 +1208,27 @@ button.mfp-close {
   
   
 /* BALICKY */
-.balicek1, .balicek2, .balicek3{
+.balicky {
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    width: 100vw;
+    gap: 2vh;
+}
+
+#balicek1, #balicek2 ,#balicek3 {
     cursor: pointer;
     background-color: #9eb5c94b;
-    position: absolute;
+    position: relative;
     text-align: center;
     justify-content: space-between;
+    gap: 5%;
     display: flex;
     flex-direction: column;
     width: 23vw;
-    height: 45vh;
     padding: 1vw;
     font-size: 1.5vw;
     background-image: linear-gradient(#9eb5c94b 0 0);
@@ -1227,203 +1238,166 @@ button.mfp-close {
     transition: all .5s;
 }
 
-.balicek1{
-    top: 35vh;
-    left: 5vw;
-}
-.balicek2{
-    top: 35vh;
-    left: 38vw;
-}
 
-.balicek3{
-    top: 35vh;
-    right: 5vw;
-}
-
-#balicek1img{
-    height:100% ;
-}
-#balicek2img{
-    height:100% ;
-}
-#balicek3img{
-    height:100% ;
-}
-
-.balickyCLose{
+.balickyCLose {
     z-index: 1024;
     position: absolute;
-    display: none;
-    width: 20px;
-    height: 20px;
-    top: 40vh;
-    right: 5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    right: 1%;
     transition: all .5s;
 }
 
-.close-btn{
-	position: absolute;
-	transition: transform .25s, opacity .25s;
-	opacity: .7;
-	cursor: pointer;
-	font-size: 3em;
-	font-family: serif;
-	line-height: 1;
-}
-.close-btn:before{
-	content: "\d7";
-}
-.close-btn:hover{
-	opacity: 1;
-	transform: rotate(90deg);
+.close-btn {
+    position: absolute;
+    transition: transform .25s, opacity .25s;
+    opacity: .7;
+    cursor: pointer;
+    font-size: 3em;
+    font-family: serif;
+    line-height: 1;
 }
 
-#balicek1p, #balicek2p, #balicek3p{
-    margin-top: 0;
+.close-btn:before {
+    content: "\d7";
 }
 
-.balicky p{
-    position: relative;
-}
-.balicek1:hover, .balicek2:hover, .balicek3:hover {
-    background-size: 100% 100%; ;
-    background-position: 100% 0;   
+.close-btn:hover {
+    opacity: 1;
+    transform: rotate(90deg);
 }
 
-.balicek1Rozbaleno{
+.balicek_rozbaleno {
     opacity: 0;
     display: none;
-    transition: all 0.2s;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.balicek_rozbaleno.active {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "left_side header header"
+    "left_side one two";
+
     position: absolute;
-    top: 39vh;
+    top: 40vh;
     left: 0vw;
     background-color: #4b6b856c;
-    width: 100vw;
-    height: 52vh;
-  }
-
-  .balicek1Rozbaleno.active {
-    animation: clickanim 0.4s ease-out;
-}
-
-
-.pobytObrazek{
-    position: absolute;
-    top: 1vw;
-    left: 2vw;
-    height: 13vw;
-}
-.pobytprvni{
-    position: absolute;
-    top: 1vw;
+    width: 92%;
+    height: 55%;
+    padding: 0% 6% 0% 2%;
     text-align: center;
+}
+
+.balicek_main {
     width: 100%;
-    color: rgb(0, 0, 0);
-    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw;
+    gap: 5px;
 }
 
-.pobytdruhy{
+.balicek_main .obrazek {
+    height: 13vw;
+    width: auto;
+}
+
+.balicek_maly.zmensen {
+    width: 33% !important;
+    height: 8vh !important;
+    font-size: x-large !important; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balicky.zmensen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
-    top: 5vw;
-    left: 28vw;
-    text-align: center;
-    width: 20%;
-    color: rgb(0, 0, 0);
-    font-size: 1.2vw;
+    width: 100%;
+    height: 12vh;
+    top: 28vh;
+    margin-top: 0 !important;
 }
 
-.pobyttreti{
-    position: absolute;
-    top: 5vw;
-    left: 48vw;
-    text-align: center;
-    width: 40%;
-    color: rgb(0, 0, 0);
-    font-size: 1.2vw;
-}
-
-.pobytctvrty{
-    position: absolute;
-    top: 63%;
-    text-align: center;
-    width: 28%;
-    color: rgb(0, 0, 0);
-    font-size: 1.3vw;
-}
-
-.pobytctvrtydlouhy{
-    position: absolute;
-    top: 63%;
-    text-align: center;
-    width: 28%;
-    color: rgb(0, 0, 0);
-    font-size: 1.3vw;
-}
-
-.pobytpaty{
-    position: absolute;
-    bottom: 5%;
-    text-align: center;
-    width: 30%;
-    color: rgb(0, 0, 0);
-    font-size: 1vw;
-}
-
-.balicek2Rozbaleno{
-    opacity: 0;
+.balicek_maly.zmensen img{
     display: none;
-    transition: opacity 0.2s, visibility 0.2s;
-    position: absolute;
-    top: 39vh;
-    left: 0vw;
-    background-color: #4b6b856c;
-    width: 100vw;
-    height: 52vh;
-
-}
-.balicek2Rozbaleno.active {
-    animation: clickanim 0.4s ease-out;
-}
-    
-@keyframes clickanim {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
-.balicek3Rozbaleno{
-    opacity: 0;
-    display: none;
-    transition: opacity 0.2s, visibility 0.2s;
-    position: absolute;
-    top: 39vh;
-    left: 0vw;
-    background-color: #4b6b856c;
-    width: 100vw;
-    height: 52vh;
+.balicek_maly.zmensen p{
+    display: flex;
+    margin: 0;
 }
-.balicek3Rozbaleno.active {
-    animation: clickanim 0.4s ease-out;
+
+.balicek_maly.active {
+    color: rgb(75, 107, 133) !important;
+    background-color: rgba(158, 181, 201, 0.65)  !important;
 }
-    
-@keyframes clickanim {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
+
+.balicek_rozbaleno div{
+    width: 100%;
+    height: 100%;
+    font-size: 90%;
 }
+
+.balicke_main_block{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    grid-area: left_side;
+}
+
+.balicek_rozbaleno .obsah{
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.balicek_rozbaleno .aktivity{
+    grid-area: two;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.balicek_rozbaleno .doplnek{
+    position: relative !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.balicek_rozbaleno .popis{
+    grid-area: header;
+    position: relative !important;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* CENÍK */
 .cenik_dospeli{
@@ -1562,14 +1536,14 @@ button.mfp-close {
 
 
 
-
+/*
 .doplnek{
     position: absolute;
     top: 94vh;
     left:18vw;
     width: 61vw;
     text-align: center;
-}
+}*/
     
     .poplatek{
         position: absolute;
