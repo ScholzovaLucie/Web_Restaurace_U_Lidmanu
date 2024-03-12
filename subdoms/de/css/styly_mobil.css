@@ -624,249 +624,77 @@
 
 
     /* CENÍK */
+    .cenik img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
 
-
-    .cenik_dospeli {
-        z-index: -1;
+    .cenik {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         position: relative;
-        padding-top: 4vw;
+        gap: 0;   
+        width: 100vw;    
+        background-color: #9eb5c94b;
         margin-top: 10vh;
-        width: 100vw;
-        background-color: #9eb5c94b;
+        margin-bottom: 0;
+    }
+
+    .doplatky {
+        background-color: white;
+        font-size: small;
+        padding: 0;
+        margin: 0;
         text-align: center;
-        font-size: 18px;
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .cenik_dospeli div:first-child {
-        width: 95vw;
-    }
-
-    .ceny_pokoju {
-        margin-top: 2vh;
-        height: 60%;
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ceny_pokoju div {
-        height: 40%;
-        width: 90vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .dospeli_obrazek {
-        z-index: 100;
-        position: relative;
-        right: 0;
-        bottom: 0vh;
-        width: 100vw;
-        height: 30vh
-    }
-
-    .dospeli_obrazek img {
-        width: 100vw;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .blok_poplatky {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .cenik_deti {
-        z-index: -1;
-        position: relative;
-        padding-top: 1vw;
-        width: 100vw;
-        background-color: #9eb5c94b;
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 20vh;
-    }
-
-    .cenik_deti div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cenik_deti div:last-child {
-        margin-left: 5vw;
-        width: 90vw;
-    }
-
-    .deti_obrazek {
-        z-index: 100;
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100vw;
-        height: 30vh;
-    }
-
-    .deti_obrazek img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: relative;
-    }
-
-
-    .cenik_priplatyk {
-        z-index: -1;
-        position: relative;
-        width: 100vw;
-        background-color: #9eb5c94b;
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        margin-top: 20vh;
+        align-items: center;
+        gap: 5px;
     }
 
-    .cenik_priplatyk div {
+    .doplatky .text{
+        background-color: white;
+        font-size: small;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .cenik .text {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 10%;
+        width: 80%;
+        height: auto;
+        margin-bottom: 0;
+        gap: 15px;
     }
 
-    .priplatky_obrazek {
-        z-index: 100;
-        position: relative;
-        right: 0;
-        bottom: 0;
-        width: 100vw;
-        height: 30vh;
-    }
 
-    .cenik_priplatyk h2 {
-        margin-left: 5vw;
-    }
-
-    .priplatky_obrazek img {
-        width: 100vw;
-        height: 100%;
-        margin-top: 10px;
-        object-fit: cover;
-    }
-
-    .priplatky {
-        width: 95vw;
-        height: 100%;
-        position: relative;
-        border-collapse: collapse;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .priplatky th {
-        width: 90vw;
-        height: 100%;
+    li {
         text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .priplatky td {
-        width: 90vw;
-        height: 100%;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .priplatky tr {
-        border-bottom: 1px solid #4b6b85;
-    }
-
-
-    .doplnek {
-        z-index: -1;
-        position: relative;
-        width: 90vw;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .poplatek {
-        z-index: -1;
-        position: relative;
-        width: 90vw;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .poplatek2 {
-        z-index: -1;
-        position: relative;
-        width: 61vw;
-        text-align: center;
-    }
-
-
-    .cenik_info {
-        z-index: -1;
-        position: relative;
-        width: 100vw;
-        background-color: #9eb5c94b;
-        text-align: center;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
-    }
-
-    .cenik_info ul {
         list-style: none;
-        text-align: center;
-        margin-left: 0vw;
-        width: 80vw;
     }
 
-    .cenik_info li {
-        margin-top: 20px;
+    .cenik ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
     }
 
-    .cenik_info h2 {
-        margin-left: 1vw;
-        width: 100vw;
-    }
-
-    .end_cenik {
-        visibility: hidden;
-        height: 0;
-    }
-
-    .info_obrazek {
-        z-index: 100;
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100vw;
-        height: 30vh;
-    }
-
-    .info_obrazek img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+   
 
 
     /* GALERIE */

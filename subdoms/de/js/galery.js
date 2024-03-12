@@ -14,13 +14,11 @@ function resetGalery(){
         document.getElementById("hlavni_druhy").style.boxShadow = "none";
         document.getElementById("hlavni_treti").style.boxShadow = "none";
         document.getElementById("hlavni_ctvrty").style.boxShadow = "none";
-        document.getElementById("hlavni_paty").style.boxShadow = "none";
 
         document.getElementById("gallery_prvni").style.display = "none";
         document.getElementById("gallery_druhy").style.display = "none";
         document.getElementById("gallery_treti").style.display = "none";
         document.getElementById("gallery_ctvrty").style.display = "none";
-        document.getElementById("gallery_paty").style.display = "none";
 
 }
 
@@ -58,11 +56,3 @@ function ANO(jazyk){
         document.getElementById("hlavni_ctvrty").style.boxShadow = "9px 9px 21px 7px rgba(0,0,0,0.70)";
         document.getElementById("gallery_ctvrty").style.display = "flex";    
 }
-
-function Jablon(jazyk){  
-        small()
-        resetGalery();
-        document.getElementById("hlavni_paty").style.boxShadow = "9px 9px 21px 7px rgba(0,0,0,0.70)";
-        document.getElementById("gallery_paty").style.display = "flex";    
-}
-
