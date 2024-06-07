@@ -6,151 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurace u Lidmanů</title>
-    <link id="styly"rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="icon" type="image/png" href="../favicomatic/" sizes="32x32" />
-    <link rel="icon" type="image/png" href="../favicomatic.zip" sizes="16x16" />
+    <link id="styly" rel="stylesheet" href="css/style.css">
+    <link id="styly" rel="stylesheet" href="css/styly_mobil.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" />
 
 </head>
 
 <body>
-          
-        <div class="obrazky"id="obrazky">
-                
-            <div id="pozadi"class="pozadi pozmobil">
-                <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
-        
-                <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
-            </div>
+
+    <div class="obrazky" id="obrazky">
+
+        <div id="pozadi" class="pozadi pozmobil">
+            <input id="menu" onclick="menoShow()" class="menu" type="image"
+                src="https://galerie.ulidmanu.cz/menu.webp" />
+
+            <img id="uvodlogo" class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo">
+        </div>
+    </div>
+
+    <div id="topnav" class="topnav">
+        <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>O nás</a>
+        <a href="kontakt.php">Kontakt</a>
+        <a class="active" href='restaurace.html'>Restaurace</a>
+        <a href='ubytovani.html'>Ubytování</a>
+        <a href='svatby.html'>Svatby</a>
+        <a class="longtop" href='pobytoveBalicka.html'>Pobytové balíčky</a>
+        <a href='cenik.html'>Ceník</a>
+        <a href='galerie.html'>Galerie</a>
+        <a href='rezervace.php'>Rezervace</a>
+        <btn onclick="location.href='restaurace.html';" id="jazykCZ" class="jazykCZaktivni">CZ</btn>
+        <btn onclick="location.href='https://en.ulidmanu.cz/restaurace.html';" id="jazykEN" class="jazykEN">EN</btn>
+        <btn onclick="location.href='https://pl.ulidmanu.cz/restaurace.html';" id="jazykPL" class="jazykPL">PL</btn>
+        <btn onclick="location.href='https://de.ulidmanu.cz/restaurace.html';" id="jazykDE" class="jazykDE">DE</btn>
+        <div class="canceltopnav" onclick="menoClose()">
+            <img id="canceltopnav" class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
         </div>
 
-<div id="topnav"class="topnav"  > 
-    <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>O nás</a>
-    <a href="kontakt.php">Kontakt</a>
-    <a class="active"href='restaurace.html'>Restaurace</a>
-    <a href='ubytovani.html'>Ubytování</a>
-    <a href='svatby.html'>Svatby</a>
-    <a class="longtop"href='pobytoveBalicka.html'>Pobytové balíčky</a>
-    <a href='cenik.html'>Ceník</a>
-    <a href='galerie.html'>Galerie</a>
-    <a href='rezervace.php'>Rezervace</a>
-    <btn onclick="location.href='restaurace.html';" id="jazykCZ"class="jazykCZaktivni">CZ</btn>
-    <btn onclick="location.href='https://en.ulidmanu.cz/restaurace.html';" id="jazykEN"class="jazykEN">EN</btn>
-    <btn onclick="location.href='https://pl.ulidmanu.cz/restaurace.html';" id="jazykPL"class="jazykPL">PL</btn>
-<btn onclick="location.href='https://de.ulidmanu.cz/restaurace.html';" id="jazykDE"class="jazykDE">DE</btn>
-    <div class="canceltopnav" onclick="menoClose()">
-        <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
     </div>
-    
-</div>
 
     <div id="main" class="main">
+        <div class="uvod_restaurace">
+            <img class="uvod_restaurace" id="uvod_restaurace" src="" alt="Uvod">
+        </div>
+        <div class="scroll">
+            <a id="up" onclick="topFunction()" title="Go to top">
+                <img id="up_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
+            <a id="down" onclick="down()" title="Go down">
+                <img id="down_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
+        </div>
+        <div id="restaurace" class="restaurace">
 
-        <div class="uvod1">
-            <img class="uvod1"id="restaurace1" src=""alt="Uvod">
-        </div>
-        
-        <a id="down_restaurace" onclick="down()"title="Go down">
-            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-        </a>
-        
-        <a id="up_restaurace" onclick="topFunction()"title="Go to top">
-        <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-        </a>
-    
-    
-        <div class="lokal"id="lokal">
-            <div class="obrazekLokal">
-                <img id="obrazekLokal" src="https://galerie.ulidmanu.cz/galerie/interier/100_HZ6_3979_Penzion_U_Lidmanu.webp" alt="Lokal">
-            </div>
-            <div class="radekLokal">
-                V lokálu s krbem a kapacitou 40 osob podáváme formou DENNÍ NABÍDKY klasická jídla české kuchyně
-                a domácí moučníky. Na našem baru najdete moravská vína, regionální pivo, nealkoholické,
-                alkoholické a teplé nápoje.
-            </div>
-        </div>
-    
-        <div class="zahradka">
-           <div class="obrazekZahradka">
-            <img  src="https://galerie.ulidmanu.cz/galerie/exterier/012_HZ6_3793_Penzion_U_Lidmanu.webp" alt="Zahradka">
-           </div>
-           
-           
-            <div class="radekZahradka"> 
-                Při pěkném počasí můžete posedět na naší letní zahrádce s vítěznou jabloní– stromem roku ČR v roce
-                2020. Zde si můžete vychutnat klid venkova a krásné výhledy na okolní kopce. Děti si mohou pohrát
-                na pískovišti nebo se zhoupnout na houpačce.
-            </div>
-        </div>
-    
-        <div class="salonek">
-           <div class="ObrazekSalonek">
-              <img src="https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp" alt="Salonek">
-           </div>
-          
-            
-            <div class="radekSalonek">
-                Salónek restaurace s kapacitou 20 osob slouží k pořádání menších oslav, jako školící místnost,
-                společenská místnost pro ubytované hosty nebo v případě většího množství hostů k rozšíření služeb
-                lokálu.
-            </div>
-        </div>
-    
-        <div class="sal">
-           <div class="obrazekSal" >
-            <img src="https://galerie.ulidmanu.cz/galerie/sal/110_HZ6_3997_Penzion_U_Lidmanu.webp" alt="Sal">
-           </div>
-         
-            
-            <div class="radekSal">
-                Velký společenský sál s kapacitou 70 osob je určen k pořádání větších společenských akcí - svatby,
-                oslavy, školení, přednášky, výstavy apod.
-            </div>
-        </div>
-        <div class="oteviraciDoba"id="oteviraciDoba">
-                Otevírací doba restaurace pro veřejnost:<br>
-                <br><br>
-                <table class="tableoteviraciDoba">
-                    <tr>
+        <div class="oteviraciDoba" id="oteviraciDoba">
+            Otevírací doba restaurace pro veřejnost:
+            <table class="tableoteviraciDoba">
+                <tr>
                     <th>
                         Červenec – Srpen
                     </th>
                     <th>
                         Leden - Červen, Září - Prosinec
                     </th>
-
-                    </tr>
-                    <tr>
+                </tr>
+                <tr>
                     <td>
                         Pátek: 14.00 – 21.00 (vaříme do 19.00)<br>
                         Sobota: 11.30 – 20.00 (vaříme do 19.00)<br>
                         Neděle: 11.30 – 20.00 (vaříme do 19.00)
                     </td>
-
                     <td>
                         Pátek: 15.00 – 21.00 (vaříme do 19.00)<br>
                         Sobota: 11.30 – 20.00 (vaříme do 19.00)<br>
                         Neděle: 11.30 – 19.00 (vaříme do 18.00)
                     </td>
+                </tr>
+            </table>
 
-                    </tr>
-
-                </table>
-               
-                <p class="nabidka">Rádi pro Vás připravíme různé větší společenské akce (svatby, rodinné oslavy, pohřební
-                    hostiny, rauty, schůze, školení apod. ). OTEVÍRACÍ DOBA dle dohody.</p>
+            <p class="nabidka">Rádi pro Vás připravíme různé větší společenské akce (svatby, rodinné oslavy, pohřební
+                hostiny, rauty, schůze, školení apod. ). OTEVÍRACÍ DOBA dle dohody.</p>
         </div>
 
+        <div class="infoBlock" >
+            <div class="obrazek">
+                <img id="obrazek"
+                    src="https://galerie.ulidmanu.cz/galerie/interier/100_HZ6_3979_Penzion_U_Lidmanu.webp" alt="Lokal">
+            </div>
+            <div class="text">
+                V lokálu s krbem a kapacitou 40 osob podáváme formou DENNÍ NABÍDKY klasická jídla české kuchyně
+                a domácí moučníky. Na našem baru najdete moravská vína, regionální pivo, nealkoholické,
+                alkoholické a teplé nápoje.
+            </div>
+        </div>
+
+        <div class="infoBlock">
+            <div class="obrazek">
+                <img src="https://galerie.ulidmanu.cz/galerie/exterier/012_HZ6_3793_Penzion_U_Lidmanu.webp"
+                    alt="Zahradka">
+            </div>
+            <div class="text">
+                Při pěkném počasí můžete posedět na naší letní zahrádce s vítěznou jabloní– stromem roku ČR v roce
+                2020. Zde si můžete vychutnat klid venkova a krásné výhledy na okolní kopce. Děti si mohou pohrát
+                na pískovišti nebo se zhoupnout na houpačce.
+            </div>
+        </div>
+
+        <div class="infoBlock">
+            <div class="obrazek">
+                <img src="https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp"
+                    alt="Salonek">
+            </div>
+            <div class="text">
+                Salónek restaurace s kapacitou 20 osob slouží k pořádání menších oslav, jako školící místnost,
+                společenská místnost pro ubytované hosty nebo v případě většího množství hostů k rozšíření služeb
+                lokálu.
+            </div>
+        </div>
+
+        <div class="infoBlock">
+            <div class="obrazek">
+                <img src="https://galerie.ulidmanu.cz/galerie/sal/110_HZ6_3997_Penzion_U_Lidmanu.webp" alt="Sal">
+            </div>
+            <div class="text">
+                Velký společenský sál s kapacitou 70 osob je určen k pořádání větších společenských akcí - svatby,
+                oslavy, školení, přednášky, výstavy apod.
+            </div>
+        </div>
     </div>
 
-    <div id="end">e</div>
-    
-    <script src='jquery.js'></script>
-    <script src="main.js"></script>
-       <script src="action.js"></script>
-       <script src='popup.js'></script>
-       <script src="index.js"></script>
-       <script src="aktivity.js"></script>
+    <script src='js/welcome_img_restaurace.js'></script>
+    <script src='js/aktivity.js'></script>
 </body>
 
 </html>

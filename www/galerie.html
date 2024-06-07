@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurace u Lidmanů</title>
-    <link id="styly"rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./styly_normalize.css">
-
-    <link rel='stylesheet prefetch' href='./styly_popup.css'>
-    <link rel="icon" type="image/png" href="favicomatic/" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicomatic.zip" sizes="16x16" />
+    <link id="styly" rel="stylesheet" href="css/style.css">
+    <link id="styly" rel="stylesheet" href="css/styly_mobil.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styly_normalize.css">
+    <link rel='stylesheet prefetch' href='css/styly_popup.css'>
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-16x16.png" sizes="32x32" />
+    <link rel="icon" type="image/webp" href="favicomatic/favicon-32x32.png" sizes="16x16" />
   
 </head>
 <body>
 
 <div class="obrazky"id="obrazky">
                 
-  <div id="pozadi"class="pozadi">
-      <img id="menu"onclick="menoShow()" class="menu" src="https://galerie.ulidmanu.cz/menu.webp" alt="Menu">
+  <div id="pozadi" class="pozadi">
+    <input id="menu" onclick="menoShow()" class="menu" type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
 
-      <img id="uvodlogo"class="uvodlogo" loading="lazy" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+    <img id="uvodlogo" class="uvodlogo" loading="lazy" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo">
   </div>
 </div>
 
@@ -40,725 +40,651 @@
   <btn onclick="location.href='https://pl.ulidmanu.cz/galerie.html';" id="jazykPL"class="jazykPL">PL</btn>
   <btn onclick="location.href='https://de.ulidmanu.cz/galerie.html';" id="jazykDE"class="jazykDE">DE</btn>
   <div class="canceltopnav" onclick="menoClose()">
-      <img id="canceltopnav"class="canceltopnav" loading="lazy" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+    <img id="canceltopnav" class="canceltopnav" loading="lazy" src="https://galerie.ulidmanu.cz/cancel.webp"
+      alt="cancel">
   </div>
 </div>
 
 <div id="main" class="main">
 
   <div id="hlavni_strana">
-    <div id="hlavni_prvni"class="hlavni_prvni" onclick="kamPrijdete(0)">
+    <div id="hlavni_prvni" class="hlavni_maly" onclick="kamPrijdete(0)">
       <p class="hlavni_nadpis_prvni">Kam přijedete</p>
-      <img alt="Kam přijedete"id="hlavni_obrazek_prvni"loading="lazy" src="https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp" alt="">
+      <img alt="Kam přijedete" id="hlavni_obrazek_prvni" loading="lazy"
+        src="https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp" alt="">
     </div>
 
-    <div id="hlavni_druhy"class="hlavni_druhy" onclick="kdeSeVyspite(0)">
+    <div id="hlavni_druhy" class="hlavni_maly" onclick="kdeSeVyspite(0)">
       <p class="hlavni_nadpis_druhy">Kde se vyspíte</p>
-      <img alt="Kde se vyspíte"id="hlavni_obrazek_druhy"loading="lazy" src="https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp" alt="">
+      <img alt="Kde se vyspíte" id="hlavni_obrazek_druhy" loading="lazy"
+        src="https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp" alt="">
     </div>
 
-    <div id="hlavni_treti"class="hlavni_treti" onclick="KdeSeNajite(0)">
+    <div id="hlavni_treti" class="hlavni_maly" onclick="KdeSeNajite(0)">
       <p class="hlavni_nadpis_treti">Kde se najíte</p>
-      <img alt="Kde se najíte" id="hlavni_obrazek_treti"loading="lazy" src="https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp" alt="">
+      <img alt="Kde se najíte" id="hlavni_obrazek_treti" loading="lazy"
+        src="https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp" alt="">
     </div>
-    <div id="hlavni_ctvrty"class="hlavni_ctvrty" onclick="ANO(0)">
+    <div id="hlavni_ctvrty" class="hlavni_maly" onclick="ANO(0)">
       <p class="hlavni_nadpis_ctvrty">Když si u nás řeknete "ANO"</p>
-      <img alt="Když si u nás řeknete 'ANO'" id="hlavni_obrazek_ctvrty"loading="lazy" src="https://galerie.ulidmanu.cz/galerie/svadba/075A5198.webp" alt="">
+      <img alt="Když si u nás řeknete 'ANO'" id="hlavni_obrazek_ctvrty" loading="lazy"
+        src="https://galerie.ulidmanu.cz/galerie/svadba/075A5198.webp" alt="">
     </div>
 
-    <div id="hlavni_paty"class="hlavni_paty" onclick="Jablon(0)" style="display: none;">
+    <div id="hlavni_paty" class="hlavni_maly" onclick="Jablon(0)" style="display: none;">
       <p class="hlavni_nadpis_ctvrty">Jabloň u Lidmanů</p>
-      <img alt="Jabloň u Lidmanů" id="hlavni_obrazek_paty"loading="lazy" src="https://galerie.ulidmanu.cz/galerie/exterier/020_HZ6_3834_Penzion_U_Lidmanu.webp" alt="">
+      <img alt="Jabloň u Lidmanů" id="hlavni_obrazek_paty" loading="lazy"
+        src="https://galerie.ulidmanu.cz/galerie/exterier/020_HZ6_3834_Penzion_U_Lidmanu.webp" alt="">
     </div>
-</div>
+  </div>
 </div>
 <div onclick="close_galery()" id="close_btn" class="mfp-close-galery"></div>
 
 
-        <article class='gallery_prvni' id='gallery_prvni'>
-          <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-          <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/128_DJI_0426_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/128_DJI_0426_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-          <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/027_DJI_0424_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/027_DJI_0424_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-            <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/CSC_0009.webp'>
-              <figure class='gallery-image'>
-                <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/CSC_0009.webp'
-                >
-              </figure>
-            </a>
-            <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0007.webp'>
-              <figure class='gallery-image'>
-                <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0007.webp'
-                >
-               
-              </figure>
-            </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0211.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0211.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0214.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0214.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0625.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0625.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0631.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0631.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0632.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0632.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0637.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0637.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/004_HZ6_3765_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/004_HZ6_3765_Penzion_U_Lidmanu.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0098.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0098.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/002_HZ6_3762_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/002_HZ6_3762_Penzion_U_Lidmanu.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/075A5191.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/075A5191.webp'
-                   >
-                </figure>
-              </a>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-1.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-1.webp'
-                   >
-                </figure>
-              </a>
+<article class='galerie_velky' id='gallery_prvni'>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/exterier/128_DJI_0426_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/128_DJI_0426_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/exterier/027_DJI_0424_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/027_DJI_0424_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/CSC_0009.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/CSC_0009.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0007.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0007.webp'>
 
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-5.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-5.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-6.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-6.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-7.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-7.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2724f156d32b9a429328.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2724f156d32b9a429328.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2782c691b3917d6f5da7.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2782c691b3917d6f5da7.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4302.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4302.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4345.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4345.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/br2095.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/br2095.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/c37744c020fa961cdb69.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/c37744c020fa961cdb69.webp'
-                   >
-                </figure>
-              </a>
-              <a class='gallery-link_prvni' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/FotkaskoleniVodafone.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/FotkaskoleniVodafone.webp'
-                   >
-                </figure>
-              </a>
-          </article>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0211.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0211.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0214.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0214.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0625.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0625.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0631.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0631.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0632.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0632.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0637.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0637.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/exterier/004_HZ6_3765_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/004_HZ6_3765_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0098.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/exterier/DSC_0098.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/002_HZ6_3762_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/002_HZ6_3762_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/075A5191.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/075A5191.webp'>
+    </figure>
+  </a>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-1.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-1.webp'>
+    </figure>
+  </a>
+
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-5.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-5.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-6.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-6.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-7.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2021-10-9 - Renata a Karel-7.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2724f156d32b9a429328.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2724f156d32b9a429328.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2782c691b3917d6f5da7.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/2782c691b3917d6f5da7.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4302.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4302.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4345.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4345.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/b4387.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/br2095.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/br2095.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/c37744c020fa961cdb69.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/c37744c020fa961cdb69.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kamPrijedete/FotkaskoleniVodafone.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kamPrijedete/FotkaskoleniVodafone.webp'>
+    </figure>
+  </a>
+</article>
 
 
 
-        <article class='gallery_druhy' id='gallery_druhy'>
-          <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-          <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/058_HZ6_3886_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/058_HZ6_3886_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-          <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/064_HZ6_3901_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/064_HZ6_3901_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-            <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/049_HZ6_3870_Penzion_U_Lidmanu.webp'>
-              <figure class='gallery-image'>
-                <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/049_HZ6_3870_Penzion_U_Lidmanu.webp'
-                >
-              </figure>
-            </a>
+<article class='galerie_velky' id='gallery_druhy'>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/039_HZ6_3852_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/058_HZ6_3886_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/058_HZ6_3886_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/064_HZ6_3901_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/064_HZ6_3901_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/049_HZ6_3870_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/049_HZ6_3870_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
 
-            <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/070_HZ6_3912_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/070_HZ6_3912_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/084_HZ6_3947_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/084_HZ6_3947_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/078_HZ6_3927_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/078_HZ6_3927_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/081_HZ6_3941_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/081_HZ6_3941_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/036_HZ6_3846_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/036_HZ6_3846_Penzion_U_Lidmanu.webp'
-                  >
-                  
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/054_HZ6_3881_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/054_HZ6_3881_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/pokoje/047_HZ6_3865_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/047_HZ6_3865_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/070_HZ6_3912_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/070_HZ6_3912_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/084_HZ6_3947_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/084_HZ6_3947_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/078_HZ6_3927_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/078_HZ6_3927_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/081_HZ6_3941_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/081_HZ6_3941_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/036_HZ6_3846_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/036_HZ6_3846_Penzion_U_Lidmanu.webp'>
+
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/054_HZ6_3881_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/054_HZ6_3881_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/pokoje/047_HZ6_3865_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/pokoje/047_HZ6_3865_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
 
 
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/107da0d0325a4274ba02.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/107da0d0325a4274ba02.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3410d5b3bfadc6fa3ea7.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3410d5b3bfadc6fa3ea7.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/6767c0a877bf0a96be14.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/6767c0a877bf0a96be14.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/b17fe1205b465f938718.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/b17fe1205b465f938718.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/ed56fef25e805947d101.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/ed56fef25e805947d101.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/f6213fac1327d43449b8.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/f6213fac1327d43449b8.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_druhy' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/fccd4abe7e64c901a057.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/fccd4abe7e64c901a057.webp'
-                    >
-                </figure>
-              </a>
-          </article>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3d0c0b88b69e0fe8c0a2.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/5eba76f31426ec80de4f.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/8ccac752ee5ba36b7f5c.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/107da0d0325a4274ba02.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/107da0d0325a4274ba02.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/373b8cbfb9d4174ea364.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3410d5b3bfadc6fa3ea7.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/3410d5b3bfadc6fa3ea7.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/6767c0a877bf0a96be14.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/6767c0a877bf0a96be14.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/b17fe1205b465f938718.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/b17fe1205b465f938718.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/ed56fef25e805947d101.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/ed56fef25e805947d101.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/f6213fac1327d43449b8.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/f6213fac1327d43449b8.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/fccd4abe7e64c901a057.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdeSeVyspite/fccd4abe7e64c901a057.webp'>
+    </figure>
+  </a>
+</article>
 
 
-        <article class='gallery_treti' id='gallery_treti'>
-          <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/100_HZ6_3979_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/100_HZ6_3979_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-          <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-          <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/101_HZ6_3981_Penzion_U_Lidmanu.webp'>
-            <figure class='gallery-image'>
-              <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/101_HZ6_3981_Penzion_U_Lidmanu.webp'
-              >
-            </figure>
-          </a>
-            <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/102_HZ6_3987_Penzion_U_Lidmanu.webp'>
-              <figure class='gallery-image'>
-                <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/102_HZ6_3987_Penzion_U_Lidmanu.webp'
-                >
-              </figure>
-            </a>
+<article class='galerie_velky' id='gallery_treti'>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/100_HZ6_3979_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/100_HZ6_3979_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/099_HZ6_3978_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/101_HZ6_3981_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/101_HZ6_3981_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/102_HZ6_3987_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/102_HZ6_3987_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
 
-            <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/103_HZ6_3988_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/103_HZ6_3988_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/107_HZ6_3994_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/107_HZ6_3994_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/093_HZ6_3968_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/093_HZ6_3968_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/094_HZ6_3969_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/094_HZ6_3969_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/092_HZ6_3966_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/092_HZ6_3966_Penzion_U_Lidmanu.webp'
-                  >
-                  
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/087_HZ6_3955_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/087_HZ6_3955_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/103_HZ6_3988_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/103_HZ6_3988_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/107_HZ6_3994_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/107_HZ6_3994_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/093_HZ6_3968_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/093_HZ6_3968_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/094_HZ6_3969_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/094_HZ6_3969_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/092_HZ6_3966_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/092_HZ6_3966_Penzion_U_Lidmanu.webp'>
 
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/089_HZ6_3960_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/089_HZ6_3960_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/087_HZ6_3955_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/087_HZ6_3955_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/088_HZ6_3958_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
 
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/interier/091_HZ6_3962_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/091_HZ6_3962_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/089_HZ6_3960_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/089_HZ6_3960_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
 
-
-              
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/1fd98ab9ecf7488c17ba.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/1fd98ab9ecf7488c17ba.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3c80f85861675816c542.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3c80f85861675816c542.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3d4507f0b89720a97987.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3d4507f0b89720a97987.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/5cc84c285c46ec7500f3.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/5cc84c285c46ec7500f3.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/7cafef1f8324a1a8b84f.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/7cafef1f8324a1a8b84f.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/2021-10-9 - Renata a Karel-3.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/2021-10-9 - Renata a Karel-3.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/18601d7664f70a5994b4.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/18601d7664f70a5994b4.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/48702cee4ce12e0d8049.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/48702cee4ce12e0d8049.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/057938a3e04122beb61a.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/057938a3e04122beb61a.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/87912da29720bb906a81.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/87912da29720bb906a81.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a19cc5ed12e42c0b67b1.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a19cc5ed12e42c0b67b1.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a42187cea42248b6eb86.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a42187cea42248b6eb86.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/bb50846fd53d057ea30d.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/bb50846fd53d057ea30d.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/br2058.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/br2058.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/ce87af1c4f70c77a664c.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/ce87af1c4f70c77a664c.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/DSC_0506.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/DSC_0506.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fa97b744f2e5a4b7f3ce.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fa97b744f2e5a4b7f3ce.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fcc6f6f38fb88301e85a.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fcc6f6f38fb88301e85a.webp'
-                    >
-                </figure>
-              </a>
-          </article>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/interier/091_HZ6_3962_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/interier/091_HZ6_3962_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
 
 
-        <article class='gallery_ctvrty' id='gallery_ctvrty'>         
 
-            <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/sal/111_HZ6_3999_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/sal/111_HZ6_3999_Penzion_U_Lidmanu.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/075A5198.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/075A5198.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/075A5239.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/075A5239.webp'
-                    >
-                </figure>
-              </a>
-              </a>
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0192.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0192.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0191.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0191.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/075A5224.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/075A5224.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0193.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0193.webp'
-                    >
-                </figure>
-              </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/1fd98ab9ecf7488c17ba.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/1fd98ab9ecf7488c17ba.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3c80f85861675816c542.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3c80f85861675816c542.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3d4507f0b89720a97987.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/3d4507f0b89720a97987.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/5cc84c285c46ec7500f3.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/5cc84c285c46ec7500f3.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/7cafef1f8324a1a8b84f.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/7cafef1f8324a1a8b84f.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/2021-10-9 - Renata a Karel-3.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/2021-10-9 - Renata a Karel-3.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/18601d7664f70a5994b4.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/18601d7664f70a5994b4.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/48702cee4ce12e0d8049.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/48702cee4ce12e0d8049.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/057938a3e04122beb61a.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/057938a3e04122beb61a.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/87912da29720bb906a81.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/87912da29720bb906a81.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a19cc5ed12e42c0b67b1.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a19cc5ed12e42c0b67b1.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a42187cea42248b6eb86.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/a42187cea42248b6eb86.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/bb50846fd53d057ea30d.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/bb50846fd53d057ea30d.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/br2058.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/br2058.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/ce87af1c4f70c77a664c.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/ce87af1c4f70c77a664c.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/DSC_0506.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/DSC_0506.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fa97b744f2e5a4b7f3ce.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fa97b744f2e5a4b7f3ce.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fcc6f6f38fb88301e85a.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/KdeSeNajite/fcc6f6f38fb88301e85a.webp'>
+    </figure>
+  </a>
+</article>
 
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/svatba2.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/SVATBA2.webp'
-                    >
-                </figure>
-              </a>
 
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/svatba1.webp'>
-                <figure class='gallery-image'>
-                  <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/svatba.webp'
-                    >
-                </figure>
-              </a>
-              <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/sal/113_HZ6_4001_Penzion_U_Lidmanu.webp'>
-                <figure class='gallery-image'>
-                  <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/sal/113_HZ6_4001_Penzion_U_Lidmanu.webp'
-                  >
-                </figure>
-              </a>
-                <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/sal/114_HZ6_4003_Penzion_U_Lidmanu.webp'>
-                  <figure class='gallery-image'>
-                    <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/sal/114_HZ6_4003_Penzion_U_Lidmanu.webp'
-                    >
-                  </figure>
-                </a>
-                <a class='gallery-link_ctvrty' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0211.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0211.webp'
-                    >
-                    
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5198.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5198.webp'
-                      >
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'
-                      >
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'
-                      >
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5252.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5252.webp'
-                      >
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5344.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5344.webp'
-                      >
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-110.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-110.webp'
-                      >
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-394.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-394.webp'
-                      >
-                  </figure>
-                </a>
-                <a class='gallery-link_treti' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-572.webp'>
-                  <figure class='gallery-image'>
-                    <img  loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-572.webp'
-                      >
-                  </figure>
-                </a>
-          </article>
+<article class='galerie_velky' id='gallery_ctvrty'>
 
-          <article class='gallery_paty' id='gallery_paty'>
-            
-         
-            </article>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/sal/111_HZ6_3999_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/sal/111_HZ6_3999_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/075A5198.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/075A5198.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/075A5239.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/075A5239.webp'>
+    </figure>
+  </a>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0192.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0192.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0191.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0191.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/075A5224.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/075A5224.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0193.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0193.webp'>
+    </figure>
+  </a>
+
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/svatba2.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/SVATBA2.webp'>
+    </figure>
+  </a>
+
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/svatba1.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/svatba.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/sal/113_HZ6_4001_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/sal/113_HZ6_4001_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/sal/114_HZ6_4003_Penzion_U_Lidmanu.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/sal/114_HZ6_4003_Penzion_U_Lidmanu.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0211.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/svadba/IMG_0211.webp'>
+
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5198.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5198.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5237.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5252.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5252.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link' href='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5344.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/075A5344.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-110.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-110.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-394.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-394.webp'>
+    </figure>
+  </a>
+  <a class='gallery-link'
+    href='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-572.webp'>
+    <figure class='gallery-image'>
+      <img loading="lazy" src='https://galerie.ulidmanu.cz/galerie/kdyzANO/2021-10-9 - Renata a Karel-572.webp'>
+    </figure>
+  </a>
+</article>
 
 
 </div>
-
-    <script loading="lazy" src='jquery.js'></script>
-    <script loading="lazy" src="main.js"></script>
-    <script loading="lazy" src="action.js"></script>
-    <script loading="lazy" src='popup.js'></script>
-    <script loading="lazy" src="index.js"></script>
-    <script loading="lazy" src="aktivity.js"></script>
-
-      
-
-   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.gallery-link').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  });
+</script>
+<script src="js/galery.js"></script>
+<script src="js/aktivity.js"></script>
 </body>
+
 </html>

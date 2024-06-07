@@ -5,120 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Restaurace a pension U Lidmanů se nachází v obci Machov mezi Broumovskými stěnami a Stolovými "/>
+    <meta name="description"
+        content="Restaurace a pension U Lidmanů se nachází v obci Machov mezi Broumovskými stěnami a Stolovými " />
     <title>Restaurace u Lidmanů</title>
-    <link id="styly"rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./main.css">
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link id="styly" rel="stylesheet" href="css/style.css">
+    <link id="styly" rel="stylesheet" href="css/styly_mobil.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
     <link href="https://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
 </head>
 
 <body id="body">
-    <div class="obrazky"id="obrazky">
-                
-        <div id="pozadi"class="pozadi pozmobil">
-            <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
-    
-            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+    <div class="obrazky" id="obrazky">
+
+        <div id="pozadi" class="pozadi pozmobil">
+            <input id="menu" onclick="menoShow()" class="menu" type="image"
+                src="https://galerie.ulidmanu.cz/menu.webp" />
+
+            <img id="uvodlogo" class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo">
         </div>
     </div>
 
-    <div id="topnav"class="topnav"> 
-       
-        <a onmouseleave="hideNodes(this)" id="index_navbar" class="active"href='index.html'>O nás</a>
+    <div id="topnav" class="topnav">
+        <a onmouseleave="hideNodes(this)" id="index_navbar" class="active" href='index.html'>O nás</a>
         <a href="kontakt.php">Kontakt</a>
         <a href='restaurace.html'>Restaurace</a>
         <a href='ubytovani.html'>Ubytování</a>
         <a href='svatby.html'>Svatby</a>
-        <a class="longtop"href='pobytoveBalicka.html'>Pobytové balíčky</a>
+        <a class="longtop" href='pobytoveBalicka.html'>Pobytové balíčky</a>
         <a href='cenik.html'>Ceník</a>
         <a href='galerie.html'>Galerie</a>
         <a href='rezervace.php'>Rezervace</a>
 
-        <btn onclick="location.href='index.html';" id="jazykCZ"class="jazykCZaktivni">CZ</btn>
-        <btn onclick="location.href='https://en.ulidmanu.cz/index.html';" id="jazykEN"class="jazykEN">EN</btn>
-        <btn onclick="location.href='https://pl.ulidmanu.cz/index.html';" id="jazykPL"class="jazykPL">PL</btn>
-        <btn onclick="location.href='https://de.ulidmanu.cz/index.html';" id="jazykDE"class="jazykDE">DE</btn>
+        <btn onclick="location.href='index.html';" id="jazykCZ" class="jazykCZaktivni">CZ</btn>
+        <btn onclick="location.href='https://en.ulidmanu.cz/index.html';" id="jazykEN" class="jazykEN">EN</btn>
+        <btn onclick="location.href='https://pl.ulidmanu.cz/index.html';" id="jazykPL" class="jazykPL">PL</btn>
+        <btn onclick="location.href='https://de.ulidmanu.cz/index.html';" id="jazykDE" class="jazykDE">DE</btn>
         <div class="canceltopnav" onclick="menoClose()">
-            <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+            <img id="canceltopnav" class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
         </div>
     </div>
-
-    
-    
 
     <div id="main" class="main">
-<div class="upozorneni">
+        <div class="upozorneni">
             <p>V termínu od 6.1. do 26.1. je restaurace uzavřena z důvodu rekonstrukce.</p>
         </div>
-        <div class="uvod1">
-            <img class="uvod1"id="uvod1" src=""alt="Uvod">
+        <div class="uvod_onas">
+            <img class="uvod_onas" id="uvod_onas" src="" alt="Uvod">
         </div>
-        <a id="down_restaurace" onclick="down()"title="Go down">
-            <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-        </a>
-        
-        <a id="up_restaurace" onclick="topFunction()"title="Go to top">
-        <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
-        </a>
-
-    <div id="uvod"class="uvod">
-                <div class="prvniObrazekTab"> 
-                    <div class="prvniRadek">Ubytování ve Stolových horách, Broumovsko, Machovská Lhota. Slunné místo v atraktivní zatím
-                        neobjevené turistické oblasti mezi Broumovskými stěnami a polskými Stolovými horami nedaleko
-                        Adršpachu. Klidná venkovská atmosféra. Stylové prostředí v budově starého hostince z roku 1884.
-                        </div>
-                    <div class="prvniObrazek"> <img id="uvod" src="https://galerie.ulidmanu.cz/galerie/exterier/031_DJI_0437_Penzion_U_Lidmanu.webp" alt="Krajina">
-                </div>
-        
-        
-        <div class="druhyObrazekTab">
-            <div class="druhyObrazek"><img src="https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp" alt="Hospoda"></div>
-                <div class="druhyRadek">Náš pension se nachází v Chráněné krajinné oblasti Broumovsko v romantické vísce Machovská
-                    Lhota, která je z jedné strany obklopena Národní parkem Stolové hory s věhlasnou Hejšovinou a z
-                    druhé strany Broumovskými stěnami, populární Adršpach je od nás vzdálen 22km. Machovsko je
-                    rájem pěší turistiky, cykloturistiky, běžeckého lyžování a boulderingu. Na své si zde přijdou milovníci
-                    klidné venkovské atmosféry a rodinného prostředí.</div>
-                </div>
-            
-    </div>
-
-    <div class="pribeh">
-        <div class="text">
-            <h2>Příběh hostince</h2>
-        Náš hostinec je v provozu již od druhé poloviny 19. století. Původním majitelem byl pan Eduard Šrám,
-        který k původnímu statku broumovského typu přistavěl lokál a také pokojík v patře. Pro potřeby
-        Lhotského ochotnického divadla též vytvořil a rozšířil společenský sál. Byl to také hospodský, který
-        po vyhlášení vojny roku 1914 prý v lokálu ze vzteku trefil půllitrem obraz císaře pána a poničil ho, jak
-        je na něm dodnes patrné.<br>
-        V roce 1950 koupili hostinec Lidmanovi, kterým však již roku 1953 komunistický režim hostinec
-        znárodnil. Mohli tam alespoň bydlet a pracovat. Do konce 80.let jezdily k Lidmanům početné party
-        trampů, protože na konci světa, blízko nepropustné hranice zůstavali stranou zájmu.V 90. letech
-        Lidmanovi hostinec zrestituovali a provozovali jej až do roku 2014. Od roku 2014 jsou novými majiteli
-        Šturmovi.
+        <div class="scroll">
+            <a id="up" onclick="topFunction()" title="Go to top">
+                <img id="up_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
+            <a id="down" onclick="down()" title="Go down">
+                <img id="down_img" src="https://galerie.ulidmanu.cz/down.webp">
+            </a>
         </div>
-        
-    </div>
 
-    <div class="tretiObrazekTab">
-        <div class="tretiObrazek"><img src="https://galerie.ulidmanu.cz/galerie/exterier/022_HZ6_3836_Penzion_U_Lidmanu.webp" alt="Hospoda"></div>
-            <div class="tretiRadek"><h2>Jabloň u Lidmanů</h2>
-                Blenheimská reneta, vítěz soutěže strom roku ČR 2020, 7.místo v evropské soutěži strom roku 2021.</div>
+        <div id="uvod" class="uvod">
+            <div class="infoBlock">
+                <div class="obrazek">
+                    <img id="uvod"
+                        src="https://galerie.ulidmanu.cz/galerie/exterier/031_DJI_0437_Penzion_U_Lidmanu.webp"
+                        alt="Krajina">
+                </div>
+                <div class="text">Ubytování ve Stolových horách, Broumovsko, Machovská Lhota. Slunné místo v atraktivní
+                    zatím
+                    neobjevené turistické oblasti mezi Broumovskými stěnami a polskými Stolovými horami nedaleko
+                    Adršpachu. Klidná venkovská atmosféra. Stylové prostředí v budově starého hostince z roku 1884.
+                </div>
             </div>
 
+            <div class="infoBlock">
+                <div class="obrazek"><img
+                        src="https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp"
+                        alt="Hospoda"></div>
+                <div class="text">Náš pension se nachází v Chráněné krajinné oblasti Broumovsko v romantické vísce
+                    Machovská
+                    Lhota, která je z jedné strany obklopena Národní parkem Stolové hory s věhlasnou Hejšovinou a z
+                    druhé strany Broumovskými stěnami, populární Adršpach je od nás vzdálen 22km. Machovsko je
+                    rájem pěší turistiky, cykloturistiky, běžeckého lyžování a boulderingu. Na své si zde přijdou
+                    milovníci
+                    klidné venkovské atmosféry a rodinného prostředí.</div>
+            </div>
 
-    <div class="end_index">e</div>
-</div>
+            <div class="infoBlock">
+                <div class="obrazek"><img
+                        src="https://galerie.ulidmanu.cz/galerie/exterier/022_HZ6_3836_Penzion_U_Lidmanu.webp"
+                        alt="Hospoda"></div>
+                <div class="text">
+                    <h2>Jabloň u Lidmanů</h2>
+                    Blenheimská reneta, vítěz soutěže strom roku ČR 2020, 7.místo v evropské soutěži strom roku 2021.
+                </div>
+            </div>
 
-  
+            <div class="pribeh">
+                <div class="text">
+                    <h2>Příběh hostince</h2>
+                    Náš hostinec je v provozu již od druhé poloviny 19. století. Původním majitelem byl pan Eduard Šrám,
+                    který k původnímu statku broumovského typu přistavěl lokál a také pokojík v patře. Pro potřeby
+                    Lhotského ochotnického divadla též vytvořil a rozšířil společenský sál. Byl to také hospodský, který
+                    po vyhlášení vojny roku 1914 prý v lokálu ze vzteku trefil půllitrem obraz císaře pána a poničil ho, jak
+                    je na něm dodnes patrné.<br>
+                    V roce 1950 koupili hostinec Lidmanovi, kterým však již roku 1953 komunistický režim hostinec
+                    znárodnil. Mohli tam alespoň bydlet a pracovat. Do konce 80.let jezdily k Lidmanům početné party
+                    trampů, protože na konci světa, blízko nepropustné hranice zůstavali stranou zájmu.V 90. letech
+                    Lidmanovi hostinec zrestituovali a provozovali jej až do roku 2014. Od roku 2014 jsou novými majiteli
+                    Šturmovi.
+                </div>
 
-<script src='jquery.js'></script>
-<script src="main.js"></script>
-   <script src="action.js"></script>
-   <script src='popup.js'></script>
-   <script src="index.js"></script>
-   <script src="aktivity.js"></script>
+            </div>
+        </div>
+
+    </div>
+
+    <script src='js/aktivity.js'></script>
+    <script src='js/welcome_img_uvod.js'></script>
 </body>
 
-</html>	
+</html>
