@@ -2,7 +2,7 @@
 var currentuvod=0; 
 var totaluvod=3; 
 var imageuvod = document.getElementById("uvod_onas");
-var imagesuvod = ["https://galerie.ulidmanu.cz/uvod/uvod1.webp","https://galerie.ulidmanu.cz/uvod/uvod2.webp","https://galerie.ulidmanu.cz/uvod/uvod3.webp" ,"https://galerie.ulidmanu.cz/uvod/uvod4.webp",]
+var imagesuvod = ["galerie/uvod/uvod1.webp","galerie/uvod/uvod2.webp","galerie/uvod/uvod3.webp" ,"galerie/uvod/uvod4.webp",]
 
 window.addEventListener('load', (event) => {
         if(imageuvod!=null){

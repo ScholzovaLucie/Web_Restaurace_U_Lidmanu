@@ -34,9 +34,9 @@
 <body>
     <div class="obrazky" id="obrazky">    
         <div id="pozadi" class="pozadi">
-            <input id="menu" onclick="menoShow()" class="menu" type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+            <input id="menu" onclick="menoShow()" class="menu" type="image" src="galerie/menu.webp" />
     
-            <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+            <img id="uvodlogo"class="uvodlogo" src="galerie/logolidman.webp" alt="Logo"> 
         </div>
     </div>
 
@@ -55,36 +55,36 @@
         <btn onclick="location.href='https://pl.ulidmanu.cz/kontakt.php';" id="jazykPL"class="jazykPL">PL</btn>
         <btn onclick="location.href='https://de.ulidmanu.cz/kontakt.php';" id="jazykDE"class="jazykDE">DE</btn>
         <div class="canceltopnav" onclick="menoClose()">
-            <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+            <img id="canceltopnav"class="canceltopnav" src="galerie/cancel.webp" alt="cancel">
         </div>
     </div>
 
 <div id="main" class="main">
 <div class="blok_obrazku">
         <div class="uvodni_obrazek">
-            <img src="https://galerie.ulidmanu.cz/kontakt/DSCN0464.webp" alt="">
+            <img src="galerie/kontakt/DSCN0464.webp" alt="">
         </div>
         <div class="uvodni_obrazek">
-            <img src="https://galerie.ulidmanu.cz/kontakt/002_HZ6_3762_Penzion_U_Lidmanu.webp" alt="">
+            <img src="galerie/kontakt/002_HZ6_3762_Penzion_U_Lidmanu.webp" alt="">
         </div>
         <div class="uvodni_obrazek">
-            <img src="https://galerie.ulidmanu.cz/kontakt/9c8f78d411bc1f0228e6.webp" alt="">
+            <img src="galerie/kontakt/9c8f78d411bc1f0228e6.webp" alt="">
         </div>
         <div class="uvodni_obrazek">
-            <img src="https://galerie.ulidmanu.cz/kontakt/95f5c4089c2e069cf161.webp" alt="">
+            <img src="galerie/kontakt/95f5c4089c2e069cf161.webp" alt="">
         </div>
     </div>
 
 <a id="down_restaurace" onclick="down()"title="Go down">
-        <img id="down_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+        <img id="down_restaurace_img"src="galerie/down.webp">
    </a>
    <a id="up_restaurace" onclick="topFunction()"title="Go to top">
-    <img id="up_restaurace_img"src="https://galerie.ulidmanu.cz/down.webp">
+    <img id="up_restaurace_img"src="galerie/down.webp">
 </a>
         <div class="info">
             <div class="info1">
                 <div class="ukazatel">
-                    <img src="https://galerie.ulidmanu.cz/position.webp" alt="Pozice">
+                    <img src="galerie/position.webp" alt="Pozice">
                 </div>
                 <div>
                     <div class="text">
@@ -100,7 +100,7 @@
 
             <div class="info2">
                 <div class="ukazatel">
-                    <img src="https://galerie.ulidmanu.cz/phone-call.webp" alt="Kontakt">
+                    <img src="galerie/phone-call.webp" alt="Kontakt">
                 </div>
                 <div class="text">
                     +420 604 341 863
@@ -109,7 +109,7 @@
 
             <div class="info3">
                 <div class="ukazatel">
-                    <img  src="https://galerie.ulidmanu.cz/mail.webp" alt="Email">
+                    <img  src="galerie/mail.webp" alt="Email">
                 </div>
                 <div>
                     <div class="text">
@@ -123,7 +123,7 @@
             </div>
 
             <div class="info4">
-                <img class="ukazatel" src="https://galerie.ulidmanu.cz/facebook2.webp" alt="Email">
+                <img class="ukazatel" src="galerie/facebook2.webp" alt="Email">
       
                 <div class="facebook">
                     <a href="https://www.facebook.com/Pension-a-restaurace-U-Lidman%C5%AF-945259918825167">Facebook</a>
@@ -212,7 +212,7 @@
         </div>
 
         <div class="kraj">
-            <img class="kraj_logo"src="https://galerie.ulidmanu.cz/logo_colour_pantone.webp">
+            <img class="kraj_logo"src="galerie/logo_colour_pantone.webp">
             <div class="kraj_text">Realizováno za finanční podpory Královéhradeckého kraje</div>
         </div>
 

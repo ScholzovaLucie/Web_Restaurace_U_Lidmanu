@@ -36,9 +36,9 @@
     <div class="obrazky"id="obrazky">
                 
                 <div id="pozadi"class="pozadi">
-                    <input id="menu"onclick="menoShow()" class="menu"type="image" src="https://galerie.ulidmanu.cz/menu.webp" />
+                    <input id="menu"onclick="menoShow()" class="menu"type="image" src="galerie/menu.webp" />
             
-                    <img id="uvodlogo"class="uvodlogo" src="https://galerie.ulidmanu.cz/logolidman.webp" alt="Logo"> 
+                    <img id="uvodlogo"class="uvodlogo" src="galerie/logolidman.webp" alt="Logo"> 
                 </div>
             </div>
     
@@ -57,7 +57,7 @@
         <btn onclick="location.href='https://pl.ulidmanu.cz/rezervace.php';" id="jazykPL"class="jazykPL">PL</btn>
 <btn onclick="location.href='https://de.ulidmanu.cz/rezervace.php';" id="jazykDE"class="jazykDE">DE</btn>
         <div class="canceltopnav" onclick="menoClose()">
-            <img id="canceltopnav"class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
+            <img id="canceltopnav"class="canceltopnav" src="galerie/cancel.webp" alt="cancel">
         </div>
         </div>
 

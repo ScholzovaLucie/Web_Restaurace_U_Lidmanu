@@ -2,7 +2,7 @@
 var currentsvatba=0; 
 var totalsvatba=7; 
 var imagesvatba = document.getElementById("uvod_svatby");
-var imagessvatba = ["https://galerie.ulidmanu.cz/svatba/svatba3.webp","https://galerie.ulidmanu.cz/svatba/svatba4.webp","https://galerie.ulidmanu.cz/svatba/svatba5.webp","https://galerie.ulidmanu.cz/svatba/svatba6.webp","https://galerie.ulidmanu.cz/svatba/svatba7.webp","https://galerie.ulidmanu.cz/svatba/svatba8.webp","https://galerie.ulidmanu.cz/svatba/svatba9.webp","https://galerie.ulidmanu.cz/svatba/svatba1.webp"]
+var imagessvatba = ["galerie/svatba/svatba3.webp","galerie/svatba/svatba4.webp","galerie/svatba/svatba5.webp","galerie/svatba/svatba6.webp","galerie/svatba/svatba7.webp","galerie/svatba/svatba8.webp","galerie/svatba/svatba9.webp","galerie/svatba/svatba1.webp"]
 window.addEventListener('load', (event) => {
         if(imagesvatba!=null){
                 imagesvatba.src = imagessvatba[currentsvatba];

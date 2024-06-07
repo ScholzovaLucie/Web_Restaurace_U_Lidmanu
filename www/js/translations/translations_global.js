@@ -59,6 +59,14 @@ const translationsMenu = {
 
   window.addEventListener('load', loadLanguageFromUrl);
 
+  function updateLinks(language) {
+    document.querySelectorAll('a').forEach(link => {
+      const url = new URL(link.href);
+      url.searchParams.set('lang', language);
+      link.href = url.toString();
+    });
+  }
+
 
   function changeLanguageMenu(language) {
     reset();
@@ -76,6 +84,8 @@ const translationsMenu = {
     const url = new URL(window.location);
     url.searchParams.set('lang', language);
     window.history.pushState({}, '', url);
+
+    updateLinks(language);
   }
 
   function reset(){
