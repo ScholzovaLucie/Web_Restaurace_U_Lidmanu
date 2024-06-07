@@ -28,20 +28,22 @@
     </div>
 
     <div id="topnav" class="topnav">
-        <a onmouseleave="hideNodes(this)" id="index_navbar" class="active" href='index.html'>O nás</a>
-        <a href="kontakt.php">Kontakt</a>
-        <a href='restaurace.html'>Restaurace</a>
-        <a href='ubytovani.html'>Ubytování</a>
-        <a href='svatby.html'>Svatby</a>
-        <a class="longtop" href='pobytoveBalicka.html'>Pobytové balíčky</a>
-        <a href='cenik.html'>Ceník</a>
-        <a href='galerie.html'>Galerie</a>
-        <a href='rezervace.php'>Rezervace</a>
-
-        <btn onclick="location.href='index.html';" id="jazykCZ" class="jazykCZaktivni">CZ</btn>
-        <btn onclick="location.href='https://en.ulidmanu.cz/index.html';" id="jazykEN" class="jazykEN">EN</btn>
-        <btn onclick="location.href='https://pl.ulidmanu.cz/index.html';" id="jazykPL" class="jazykPL">PL</btn>
-        <btn onclick="location.href='https://de.ulidmanu.cz/index.html';" id="jazykDE" class="jazykDE">DE</btn>
+        <a onmouseleave="hideNodes(this)" id="onas" class="active" href='index.html'>O nás</a>
+        <a id="kontakt" href="kontakt.php">Kontakt</a>
+        <a id="restaurace" href='restaurace.html'>Restaurace</a>
+        <a id="ubytovani" href='ubytovani.html'>Ubytování</a>
+        <a id="svatby" href='svatby.html'>Svatby</a>
+        <a id="balicky" class="longtop" href='pobytoveBalicka.html'>Pobytové balíčky</a>
+        <a id="cenik" href='cenik.html'>Ceník</a>
+        <a id="galerie" href='galerie.html'>Galerie</a>
+        <a id="rezervace" href='rezervace.php'>Rezervace</a>
+        <div class="jazyky">
+            <btn onclick="changeLanguage('cz'); changeLanguageMenu('cz');" id="cz" class="jazyk aktivni">CZ</btn>
+            <btn onclick="changeLanguage('en'); changeLanguageMenu('en');" id="en" class="jazyk">EN</btn>
+            <btn onclick="changeLanguage('pl'); changeLanguageMenu('pl');" id="pl" class="jazyk">PL</btn>
+            <btn onclick="changeLanguage('de'); changeLanguageMenu('de');" id="de" class="jazyk">DE</btn>
+        </div>
+        
         <div class="canceltopnav" onclick="menoClose()">
             <img id="canceltopnav" class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
         </div>
@@ -49,7 +51,7 @@
 
     <div id="main" class="main">
         <div class="upozorneni">
-            <p>V termínu od 6.1. do 26.1. je restaurace uzavřena z důvodu rekonstrukce.</p>
+            <p id="text_upozorneni"></p>
         </div>
         <div class="uvod_onas">
             <img class="uvod_onas" id="uvod_onas" src="" alt="Uvod">
@@ -70,7 +72,7 @@
                         src="https://galerie.ulidmanu.cz/galerie/exterier/031_DJI_0437_Penzion_U_Lidmanu.webp"
                         alt="Krajina">
                 </div>
-                <div class="text">Ubytování ve Stolových horách, Broumovsko, Machovská Lhota. Slunné místo v atraktivní
+                <div class="text" id="uvodnitext">Ubytování ve Stolových horách, Broumovsko, Machovská Lhota. Slunné místo v atraktivní
                     zatím
                     neobjevené turistické oblasti mezi Broumovskými stěnami a polskými Stolovými horami nedaleko
                     Adršpachu. Klidná venkovská atmosféra. Stylové prostředí v budově starého hostince z roku 1884.
@@ -81,7 +83,7 @@
                 <div class="obrazek"><img
                         src="https://galerie.ulidmanu.cz/galerie/exterier/132_HZ6_4056_Penzion_U_Lidmanu.webp"
                         alt="Hospoda"></div>
-                <div class="text">Náš pension se nachází v Chráněné krajinné oblasti Broumovsko v romantické vísce
+                <div class="text" id="textlokace">Náš pension se nachází v Chráněné krajinné oblasti Broumovsko v romantické vísce
                     Machovská
                     Lhota, která je z jedné strany obklopena Národní parkem Stolové hory s věhlasnou Hejšovinou a z
                     druhé strany Broumovskými stěnami, populární Adršpach je od nás vzdálen 22km. Machovsko je
@@ -95,15 +97,15 @@
                         src="https://galerie.ulidmanu.cz/galerie/exterier/022_HZ6_3836_Penzion_U_Lidmanu.webp"
                         alt="Hospoda"></div>
                 <div class="text">
-                    <h2>Jabloň u Lidmanů</h2>
-                    Blenheimská reneta, vítěz soutěže strom roku ČR 2020, 7.místo v evropské soutěži strom roku 2021.
+                    <h2 id="jablonnadpis">Jabloň u Lidmanů</h2>
+                    <p id="jablontext">Blenheimská reneta, vítěz soutěže strom roku ČR 2020, 7.místo v evropské soutěži strom roku 2021.</p>
                 </div>
             </div>
 
             <div class="pribeh">
                 <div class="text">
-                    <h2>Příběh hostince</h2>
-                    Náš hostinec je v provozu již od druhé poloviny 19. století. Původním majitelem byl pan Eduard Šrám,
+                    <h2 id="pribehnadpis">Příběh hostince</h2>
+                    <p id="pribehtext">Náš hostinec je v provozu již od druhé poloviny 19. století. Původním majitelem byl pan Eduard Šrám,
                     který k původnímu statku broumovského typu přistavěl lokál a také pokojík v patře. Pro potřeby
                     Lhotského ochotnického divadla též vytvořil a rozšířil společenský sál. Byl to také hospodský, který
                     po vyhlášení vojny roku 1914 prý v lokálu ze vzteku trefil půllitrem obraz císaře pána a poničil ho, jak
@@ -112,7 +114,7 @@
                     znárodnil. Mohli tam alespoň bydlet a pracovat. Do konce 80.let jezdily k Lidmanům početné party
                     trampů, protože na konci světa, blízko nepropustné hranice zůstavali stranou zájmu.V 90. letech
                     Lidmanovi hostinec zrestituovali a provozovali jej až do roku 2014. Od roku 2014 jsou novými majiteli
-                    Šturmovi.
+                    Šturmovi.</p>
                 </div>
 
             </div>
@@ -121,7 +123,9 @@
     </div>
 
     <script src='js/aktivity.js'></script>
-    <script src='js/welcome_img_uvod.js'></script>
+    <script src='js/welcome/welcome_img_uvod.js'></script>
+    <script src='js/translations/welcomes_index.js'></script>
+    <script src='js/translations/welcome_global.js'></script>
 </body>
 
 </html>
