@@ -27,19 +27,21 @@
     </div>
 
     <div id="topnav" class="topnav">
-        <a onmouseleave="hideNodes(this)" id="index_navbar" href='index.html'>O nás</a>
-        <a href="kontakt.php">Kontakt</a>
-        <a class="active" href='restaurace.html'>Restaurace</a>
-        <a href='ubytovani.html'>Ubytování</a>
-        <a href='svatby.html'>Svatby</a>
-        <a class="longtop" href='pobytoveBalicka.html'>Pobytové balíčky</a>
-        <a href='cenik.html'>Ceník</a>
-        <a href='galerie.html'>Galerie</a>
-        <a href='rezervace.php'>Rezervace</a>
-        <btn onclick="location.href='restaurace.html';" id="jazykCZ" class="jazykCZaktivni">CZ</btn>
-        <btn onclick="location.href='https://en.ulidmanu.cz/restaurace.html';" id="jazykEN" class="jazykEN">EN</btn>
-        <btn onclick="location.href='https://pl.ulidmanu.cz/restaurace.html';" id="jazykPL" class="jazykPL">PL</btn>
-        <btn onclick="location.href='https://de.ulidmanu.cz/restaurace.html';" id="jazykDE" class="jazykDE">DE</btn>
+        <a onmouseleave="hideNodes(this)" id="onas"  href='index.html'>O nás</a>
+        <a id="kontakt" href="kontakt.php">Kontakt</a>
+        <a id="restaurace" class="active" href='restaurace.html'>Restaurace</a>
+        <a id="ubytovani" href='ubytovani.html'>Ubytování</a>
+        <a id="svatby" href='svatby.html'>Svatby</a>
+        <a id="balicky" class="longtop" href='pobytoveBalicka.html'>Pobytové balíčky</a>
+        <a id="cenik" href='cenik.html'>Ceník</a>
+        <a id="galerie" href='galerie.html'>Galerie</a>
+        <a id="rezervace" href='rezervace.php'>Rezervace</a>
+        <div class="jazyky">
+            <btn onclick="changeLanguage('cz'); changeLanguageMenu('cz');" id="cz" class="jazyk aktivni">CZ</btn>
+            <btn onclick="changeLanguage('en'); changeLanguageMenu('en');" id="en" class="jazyk">EN</btn>
+            <btn onclick="changeLanguage('pl'); changeLanguageMenu('pl');" id="pl" class="jazyk">PL</btn>
+            <btn onclick="changeLanguage('de'); changeLanguageMenu('de');" id="de" class="jazyk">DE</btn>
+        </div>
         <div class="canceltopnav" onclick="menoClose()">
             <img id="canceltopnav" class="canceltopnav" src="https://galerie.ulidmanu.cz/cancel.webp" alt="cancel">
         </div>
@@ -138,6 +140,8 @@
 
     <script src='js/welcome/welcome_img_restaurace.js'></script>
     <script src='js/aktivity.js'></script>
+    <script src='js/translations/translations_restaurace.js'></script>
+    <script src='js/translations/translations_global.js'></script>
 </body>
 
 </html>
